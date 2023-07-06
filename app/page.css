@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* DÃ©clarations des variables CSS personnalisÃ©es */
+
+
+:root {
+    --couleur-fond: #fff;
+    --couleur-fond2: #f9f9f9;
+    --couleur-texte: #2d2e32;
+    --couleur-texte-hover: #2c2c2cc5;
+    --couleur-span: #0E6899;
+    --couleur-nav: #6c6c6c;
+    --couleur-nav-hover: #606060;
+    --couleur-nav-active: #4d4d4d;
+    --couleur-h3: #4d4d4d;
+    --couleur-box-shadow: #0000001a;
+}
+
+:root.dark-mode {
+    --couleur-fond: #191C1D;
+    --couleur-texte: #E8E9EB;
+    --couleur-span: #f19766;
+}
+
+/* Reste de votre code CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: var(--couleur-texte);
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "poppins", "sans-serif";
+}
+
+section {
+    padding: 130px 65px 80px;
+    background: var(--couleur-fond);
+}
+
+section h2,
+section>p {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+section h2 {
+    font-size: 3vw;
+}
+
+section>p {
+    color: #6c6c6c;
+    font-size: 1.3vw;
+}
+
+span {
+    color: var(--couleur-span);
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 930px) {
+    section h2 {
+        font-size: 4.5vw;
+    }
+
+    section>p {
+        color: #6c6c6c;
+        margin-bottom: 10vw;
+        font-size: 3vw;
+    }
+}

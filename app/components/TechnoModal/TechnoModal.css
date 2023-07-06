@@ -1,0 +1,7 @@
+.techno-modal {
+    padding: 4px 12px;
+    border: 1px solid var(--couleur-span);
+    border-radius: 30px;
+    font-weight: 300;
+    font-size: 0.9vw;
+}

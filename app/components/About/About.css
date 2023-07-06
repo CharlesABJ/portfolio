@@ -1,0 +1,51 @@
+.about .about-zone {
+    display: flex;
+    margin-top: 100px;
+}
+
+.about .about-zone .illustration {
+    width: 50%;
+}
+
+.about .about-zone .illustration img {
+    object-fit: cover;
+    width: 95%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.about .about-zone .presentation {
+    width: 50%;
+}
+
+.about .about-zone .presentation h3 {
+    margin-bottom: 10px;
+}
+
+.about .about-zone .presentation details summary {
+    margin: 0 auto;
+    list-style: none;
+    cursor: pointer;
+    width: max-content;
+    font-weight: 500;
+}
+
+.about .about-zone .presentation details summary:hover {
+    color: var(--couleur-nav-active);
+}
+
+
+
+@media screen and (max-width:930px) {
+    .about .about-zone {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .about .about-zone .illustration,
+    .about .about-zone .presentation {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

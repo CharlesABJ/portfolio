@@ -1,0 +1,31 @@
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    font-size: 27px;
+    cursor: pointer;
+    top: 40%;
+    transition: 0.3s all;
+    color: var(--couleur-texte);
+    transition: 0.3s all;
+    z-index: 3;
+}
+
+
+.arrow-left {
+    left: 35px;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.arrow-right {
+    right: 35px;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    transition: 0.3s all;
+    color: var(--couleur-texte-hover);
+}
+
+
+@media screen and (max-width:930px) {}

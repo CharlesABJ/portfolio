@@ -1,0 +1,145 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+}
+
+.modal-container .overlay {
+    position: absolute;
+    background: #333333d3;
+    width: 100%;
+    height: 100%;
+    cursor: auto;
+}
+
+.modal-container .modal {
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    background: var(--couleur-fond);
+    border-radius: 5px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+
+}
+
+.modal-container .modal .leave-modal {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.modal-container .modal .leave-modal i {
+    cursor: pointer;
+}
+
+.modal-container .modal .modal-presentation .quick-presentation {
+    display: flex;
+    height: 100%;
+}
+
+.modal-container .modal .modal-presentation .quick-presentation .image {
+    width: 50%;
+    height: 100%;
+    background-color: var(--couleur-fond2);
+    margin: 0 30px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container .modal .modal-presentation .quick-presentation .image img {
+    width: 90%;
+}
+
+.modal-container .modal .modal-presentation .quick-presentation .presentation {
+    margin: 0 30px 40px 5px;
+    width: 50%;
+    height: 100%;
+}
+
+
+.modal-container .modal .modal-presentation .quick-presentation .presentation h3 {
+    font-size: 2.3vw;
+    margin-bottom: 5px;
+}
+
+.modal-container .modal .modal-presentation .quick-presentation .presentation h4 {
+    font-size: 1.3vw;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.modal-container .modal .modal-presentation .quick-presentation .presentation h4 span {
+    color: var(--couleur-texte);
+    font-weight: 200;
+}
+
+.modal-container .modal .modal-presentation .quick-presentation .presentation p {
+    font-size: 1.1vw;
+}
+
+.modal-container .modal .modal-presentation .quick-presentation .presentation ul {
+    list-style: none;
+    display: flex;
+}
+
+.modal-container .modal .modal-presentation .quick-presentation .presentation ul li {
+    margin: 10px 10px 20px 0;
+}
+
+.modal-container .modal .modal-presentation .quick-presentation .presentation .code-and-website {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--couleur-fond2);
+}
+
+.modal-container .modal .modal-presentation .quick-presentation .presentation .code-and-website a {
+    display: inline-block;
+    padding: 7px;
+    text-decoration: none;
+    transition: 0.3s all;
+    font-size: 1.2vw;
+}
+
+.modal-container .modal .modal-presentation .quick-presentation .presentation .code-and-website a:hover,
+.modal-container .modal .modal-presentation .quick-presentation .presentation .code-and-website a:hover i {
+    color: var(--couleur-span);
+    transition: 0.3s all;
+}
+
+.modal-container .modal .modal-presentation .quick-presentation .presentation .code-and-website a i {
+    margin-left: 7px;
+}
+
+
+@media screen and (max-width:930px) {
+    .modal-container .modal .modal-presentation .quick-presentation {
+        flex-direction: column;
+    }
+
+    .modal-container .modal {
+        max-width: 650px;
+        max-height: 96vh;
+    }
+
+
+    .modal-container .modal .modal-presentation .quick-presentation .image,
+    .modal-container .modal .modal-presentation .quick-presentation .presentation {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
