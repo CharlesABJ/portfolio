@@ -24,7 +24,7 @@
 }
 
 .card-projects p {
-    margin: 4px 0 6px;
+    margin: 4px 0 20px;
 }
 
 .card-projects .see-more {
@@ -65,4 +65,15 @@
     .card-projects:nth-child(2) {
         display: none;
     }
+
+    .card-projects .techno-use li span {
+        font-size: 1.6vw;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .card-projects {
+        padding: 15px 15px 40px;
+    }
+
 }

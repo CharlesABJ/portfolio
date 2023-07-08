@@ -5,7 +5,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--couleur-fond);
+    background: var(--couleur-fond-header);
     box-shadow: 0 2px 4px var(--couleur-box-shadow);
     height: 80px;
     z-index: 4;
@@ -81,7 +81,7 @@ header .up {
     position: fixed;
     right: 65px;
     bottom: 7%;
-    background: white;
+    background: var(--couleur-up-button);
     box-shadow: 0 2px 4px var(--couleur-box-shadow);
     padding: 8px 10px;
     border-radius: 3px;
@@ -92,7 +92,7 @@ header .up:hover i {
 }
 
 header .up i {
-    color: #6c6c6c;
+    color: var(--couleur-nav);
 }
 
 @media screen and (max-width: 930px) {

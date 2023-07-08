@@ -16,10 +16,22 @@
 
 .about .about-zone .presentation {
     width: 50%;
+    text-align: center;
 }
 
 .about .about-zone .presentation h3 {
     margin-bottom: 10px;
+}
+
+.about .about-zone .presentation details {
+    position: relative;
+}
+
+.about .about-zone .presentation details[open] summary {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 30px);
 }
 
 .about .about-zone .presentation details summary {
@@ -48,4 +60,13 @@
         margin-bottom: 20px;
         text-align: center;
     }
+
+
+}
+
+@media screen and (max-width:740px) {
+    .about .about-zone .presentation {
+        font-size: 3vw;
+    }
+
 }

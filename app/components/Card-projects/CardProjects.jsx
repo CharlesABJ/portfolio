@@ -4,13 +4,13 @@ import TechnoModal from "../TechnoModal/TechnoModal";
 
 function CardProjects(props) {
   return (
-    <div onClick={props.onClick} className="card-projects">
+    <div className="card-projects">
       <div className="cover-image">
         <img src={props.imageSrc} alt={props.titleProject} />
       </div>
       <h3>{props.titleProject}</h3>
       <p>{props.missionProjectResume}</p>
-      <p className="see-more">
+      <p onClick={props.onClick} className="see-more">
         Voir plus <i className="fa-solid fa-arrow-right"></i>
       </p>
       <ul className="techno-use">

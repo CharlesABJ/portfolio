@@ -1,6 +1,6 @@
 .contact .contact-zone {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
     margin: 100px 0;
 }
@@ -33,6 +33,7 @@
 
 .contact .contact-zone .classic-contact ul li {
     margin-bottom: 15px;
+
 }
 
 .contact .contact-zone .classic-contact ul li i {
@@ -41,7 +42,7 @@
     padding-left: 10px;
 }
 
-.contact .contact-zone .classic-contact ul li:hover,
+
 .contact .contact-zone .classic-contact ul li:hover i,
 .contact .contact-zone .classic-contact ul li i:hover,
 .contact .contact-zone .classic-contact ul li a:hover {
@@ -57,9 +58,6 @@
     text-decoration: underline;
 }
 
-.contact .contact-zone .classic-contact ul .messenger:hover {
-    color: #181a1b;
-}
 
 .contact .contact-zone .classic-contact ul p {
     color: #6c6c6c;

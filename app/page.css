@@ -7,12 +7,15 @@
 :root {
     --couleur-fond: #fff;
     --couleur-fond2: #f9f9f9;
+    --couleur-fond-header: #fff;
     --couleur-texte: #2d2e32;
     --couleur-texte-hover: #2c2c2cc5;
     --couleur-span: #0E6899;
     --couleur-nav: #6c6c6c;
+    --couleur-up-button: #fff;
     --couleur-nav-hover: #606060;
     --couleur-nav-active: #4d4d4d;
+    --couleur-image-hover: #ffffff69;
     --couleur-h3: #4d4d4d;
     --couleur-box-shadow: #0000001a;
 }
@@ -21,6 +24,7 @@
     --couleur-fond: #191C1D;
     --couleur-texte: #E8E9EB;
     --couleur-span: #f19766;
+    --couleur-image-hover: #ffffff69;
 }
 
 /* Reste de votre code CSS */

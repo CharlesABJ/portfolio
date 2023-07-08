@@ -42,7 +42,7 @@ function Contact(props) {
           </ul>
           <ul>
             <p>Messenger</p>
-            <li className="messenger">@CharlesABJDev</li>
+            <li>@CharlesABJ</li>
             <li>
               <a
                 href="https://m.me/100094215251917"

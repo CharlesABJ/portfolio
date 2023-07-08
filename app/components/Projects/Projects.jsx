@@ -44,17 +44,6 @@ function Projects(props) {
       <h2>Mes Projets</h2>
       <p>Un aperçu de mes projets</p>
       <div className="projects-zone">
-        <div className="arrow-zone">
-          <Arrow
-            onClick={handleClickPreviousProject}
-            className="arrow-left fa-solid fa-chevron-up"
-          />
-          <Arrow
-            onClick={handleClickNextProject}
-            className="arrow-right fa-solid fa-chevron-up"
-          />
-        </div>
-
         <div className="cards-projects-zone">
           {visibleProjects.map((e, index) => (
             <CardProjects
@@ -67,9 +56,20 @@ function Projects(props) {
             />
           ))}
         </div>
+        <div className="arrow-zone">
+          <Arrow
+            onClick={handleClickPreviousProject}
+            className="arrow-left fa-solid fa-chevron-up"
+          />
+          <Arrow
+            onClick={handleClickNextProject}
+            className="arrow-right fa-solid fa-chevron-up"
+          />
+        </div>
       </div>
       {isModalOpen && (
         <ModalProject
+          style={{ display: "block" }}
           projectIndex={selectedProjectIndex}
           isOpen={isModalOpen}
           onClose={handleCloseModal}

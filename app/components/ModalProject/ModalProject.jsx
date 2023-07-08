@@ -8,7 +8,7 @@ function ModalProject(props) {
   const project = projectList[props.projectIndex];
 
   return (
-    <div className="modal-container">
+    <div style={props.style} className={props.className || "modal-container"}>
       <div className="overlay trigger"></div>
       <div className="modal">
         <div className="leave-modal">

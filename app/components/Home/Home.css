@@ -67,7 +67,7 @@
     line-height: 1;
     padding-right: 10px;
     margin: 0 40px 0 0;
-    border-right: #6c6c6c 2px solid;
+    border-right: var(--couleur-nav) 2px solid;
 }
 
 .home .technos .technos-icons {
@@ -85,7 +85,7 @@
 .home .technos li img {
     width: 4vw;
     padding: 5px;
-    background: var(--couleur-fond);
+    background: #f9f9f9;
     border-radius: 50%;
     box-shadow: 0 0 10px var(--couleur-box-shadow);
     cursor: pointer;
@@ -94,7 +94,7 @@
 }
 
 .home .technos li img:hover {
-    background: #ffffff69;
+    background: var(--couleur-image-hover);
     box-shadow: 0 0 15px #00000030;
     transform: scale(1.01);
 }
