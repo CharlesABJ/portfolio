@@ -102,7 +102,7 @@ header .up i {
         transform: translate(-50%, -93%);
         bottom: 10px;
         width: 90%;
-        height: 10vw;
+        height: 12vw;
         padding-inline: 35px;
         border-radius: 30px;
         box-shadow: 0 2px 10px var(--couleur-box-shadow);

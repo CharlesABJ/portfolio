@@ -22,9 +22,18 @@
 
 :root.dark-mode {
     --couleur-fond: #191C1D;
+    --couleur-fond2: #1F2223;
+    --couleur-fond-header: #191C1D;
     --couleur-texte: #E8E9EB;
+    --couleur-texte-hover: #E8E9EBC5;
     --couleur-span: #f19766;
+    --couleur-nav: #6c6c6c;
+    --couleur-up-button: #E8E9EB;
+    --couleur-nav-hover: #606060;
+    --couleur-nav-active: #4d4d4d;
     --couleur-image-hover: #ffffff69;
+    --couleur-h3: #E8E9EB;
+    --couleur-box-shadow: #0000001a;
 }
 
 /* Reste de votre code CSS */
@@ -34,6 +43,12 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     color: var(--couleur-texte);
+}
+
+body,
+header {
+    margin: 0 auto;
+    max-width: 1500px;
 }
 
 body.modal-open {
@@ -69,7 +84,6 @@ section>p {
 
 span {
     color: var(--couleur-span);
-    font-weight: 500;
 }
 
 
@@ -79,7 +93,7 @@ span {
     }
 
     section>p {
-        color: #6c6c6c;
+        color: var(--couleur-nav);
         margin-bottom: 10vw;
         font-size: 3vw;
     }

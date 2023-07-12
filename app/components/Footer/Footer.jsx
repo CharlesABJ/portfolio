@@ -23,7 +23,6 @@ function Footer(props) {
           Projets
         </li>
       </ul>
-
       <ul className="social">
         <li>
           <a
@@ -57,6 +56,7 @@ function Footer(props) {
         </li>
       </ul>
       <span>© charlesabj - 2023. Tous droits réservés.</span>
+      https://icones8.fr/icons
     </footer>
   );
 }

@@ -9,13 +9,16 @@ function ModalProject(props) {
 
   return (
     <div style={props.style} className={props.className || "modal-container"}>
-      <div className="overlay trigger"></div>
+      <div onClick={props.onClose} className="overlay trigger"></div>
       <div className="modal">
         <div className="leave-modal">
           <i className="fa-solid fa-xmark"></i>
         </div>
 
         <div className="modal-presentation">
+          <h3 className="responsive-create">
+            <span>{project.titleProject}</span>
+          </h3>
           <div className="quick-presentation">
             <div className="image">
               <img
@@ -24,7 +27,7 @@ function ModalProject(props) {
               />
             </div>
             <div className="presentation">
-              <h3>
+              <h3 className="responsive-delete">
                 <span>{project.titleProject}</span>
               </h3>
               <h4>

@@ -12,20 +12,12 @@ function Projects(props) {
 
   const handleClickNextProject = () => {
     const lastIndex = projectList.length - 1;
-    if (startIndex === lastIndex) {
-      setStartIndex(0);
-    } else {
-      setStartIndex(startIndex + 1);
-    }
+    setStartIndex((prevIndex) => (prevIndex === lastIndex ? 0 : prevIndex + 1));
   };
 
   const handleClickPreviousProject = () => {
     const lastIndex = projectList.length - 1;
-    if (startIndex === 0) {
-      setStartIndex(lastIndex);
-    } else {
-      setStartIndex(startIndex - 1);
-    }
+    setStartIndex((prevIndex) => (prevIndex === 0 ? lastIndex : prevIndex - 1));
   };
 
   const handleClickOpenModal = (index) => {
@@ -39,20 +31,21 @@ function Projects(props) {
   };
 
   const visibleProjects = projectList.slice(startIndex, startIndex + 2);
+
   return (
     <section className="projects" ref={props.sectionRef}>
       <h2>Mes Projets</h2>
       <p>Un aperçu de mes projets</p>
       <div className="projects-zone">
         <div className="cards-projects-zone">
-          {visibleProjects.map((e, index) => (
+          {visibleProjects.map((project, index) => (
             <CardProjects
               onClick={() => handleClickOpenModal(startIndex + index)}
               key={index}
-              titleProject={e.titleProject}
-              imageSrc={e.imageSrc}
-              missionProjectResume={e.missionProjectResume}
-              technoName={e.technoName}
+              titleProject={project.titleProject}
+              imageSrc={project.imageSrc}
+              missionProjectResume={project.missionProjectResume}
+              technoName={project.technoName}
             />
           ))}
         </div>

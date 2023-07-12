@@ -73,4 +73,7 @@
         grid-gap: 30px;
     }
 
+    .skills .languages-logi h3 {
+        font-size: 3.5vw;
+    }
 }

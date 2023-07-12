@@ -56,7 +56,6 @@ function About(props) {
           <img src="../../assets/images/profil.png" alt="C'est moi :)" />
         </div>
       </div>
-
       <div className="technos">
         <p>Mes Technos</p>
         <ul className="technos-icons">

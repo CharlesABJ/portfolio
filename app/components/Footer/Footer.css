@@ -62,3 +62,18 @@ footer span {
     }
 
 }
+
+
+@media screen and (max-width: 740px) {
+
+    footer h3,
+    footer p {
+        font-size: 3.5vw;
+    }
+
+    footer .nav li,
+    footer span {
+        font-size: 3vw;
+        margin-inline: 10px;
+    }
+}

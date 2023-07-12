@@ -42,10 +42,16 @@
     cursor: pointer;
 }
 
+.modal-container .modal .modal-presentation .responsive-create {
+    display: none;
+}
+
 .modal-container .modal .modal-presentation .quick-presentation {
     display: flex;
     height: 100%;
 }
+
+
 
 .modal-container .modal .modal-presentation .quick-presentation .image {
     width: 50%;
@@ -86,6 +92,7 @@
 
 .modal-container .modal .modal-presentation .quick-presentation .presentation p {
     font-size: 1.1vw;
+    color: var(--couleur-nav);
 }
 
 .modal-container .modal .modal-presentation .quick-presentation .presentation ul {
@@ -130,7 +137,27 @@
 
     .modal-container .modal {
         max-width: 650px;
-        max-height: 96vh;
+        height: 96vh;
+    }
+
+    .modal-container .modal .modal-presentation .responsive-create {
+        display: block;
+        font-size: 3.5vw;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .modal-container .modal .modal-presentation .responsive-delete {
+        display: none;
+    }
+
+    .modal-container .modal .modal-presentation .quick-presentation .presentation h4 {
+        font-size: 1.8vw;
+
+    }
+
+    .modal-container .modal .modal-presentation .quick-presentation .presentation p {
+        font-size: 1.5vw;
     }
 
 
@@ -139,7 +166,37 @@
         width: 90%;
         display: flex;
         flex-direction: column;
+
+    }
+
+    .modal-container .modal .modal-presentation .quick-presentation {
         align-items: center;
+    }
+
+    .modal-container .modal .modal-presentation .quick-presentation .image {
+        margin: 20px 0;
+    }
+
+    .modal-container .modal .modal-presentation .quick-presentation .presentation {
+        margin: 0;
+    }
+
+    .modal-container .modal .modal-presentation .quick-presentation .presentation ul li {
+        margin: 10px 8px 20px 0;
+    }
+
+    .modal-container .modal .modal-presentation .quick-presentation .presentation .techno-modal {
+        font-size: 1.2vw;
+    }
+
+    .modal-container .modal .modal-presentation .quick-presentation .presentation .code-and-website a {
+
+        font-size: 1.5vw;
+    }
+
+    .modal-container .modal .modal-presentation .quick-presentation .image img {
+        height: 90%;
+        object-fit: cover;
     }
 
 }
