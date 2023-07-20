@@ -56,7 +56,7 @@ function Footer(props) {
         </li>
       </ul>
       <span>© charlesabj - 2023. Tous droits réservés.</span>
-      https://icones8.fr/icons
+      {/* Thank you https://icones8.fr/icons !! */}
     </footer>
   );
 }

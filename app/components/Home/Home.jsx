@@ -1,5 +1,11 @@
 import React from "react";
 import "./Home.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookMessenger,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 function About(props) {
   return (
     <section className="home" ref={props.sectionRef}>
@@ -19,6 +25,7 @@ function About(props) {
             par le désir de concrétiser et partager des réalisations avec le
             monde !
           </p>
+
           <ul>
             <li>
               <a
@@ -27,27 +34,27 @@ function About(props) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa-brands fa-github"></i>
+                <FontAwesomeIcon icon={faGithub} />
               </a>
             </li>
             <li>
               <a
-                title="Whatsapp"
-                href="https://api.whatsapp.com/qr/UJSL5CKGZELRD1?autoload=1&app_absent=0"
+                title="LinkedIn"
+                href="https://www.linkedin.com/in/charlesabj-78753b182/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa-brands fa-whatsapp"></i>
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </li>
             <li>
               <a
                 title="Messenger"
-                href=""
+                href="https://m.me/100094215251917"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa-brands fa-facebook-messenger"></i>
+                <FontAwesomeIcon id="font-icon" icon={faFacebookMessenger} />
               </a>
             </li>
           </ul>

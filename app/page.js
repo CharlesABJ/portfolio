@@ -1,5 +1,11 @@
 "use client";
+// import Font Awesome CSS
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
+import { config } from "@fortawesome/fontawesome-svg-core";
+// Tell Font Awesome to skip adding the CSS automatically
+// since it's already imported above
+config.autoAddCss = false;
 import React, { useRef } from "react";
 import "./page.css";
 import Header from "./components/Header/Header";
@@ -28,8 +34,8 @@ function page() {
       />
       <Home sectionRef={homeSectionRef} />
       <About sectionRef={aboutSectionRef} />
-      <Skills sectionRef={skillsSectionRef} />
       <Projects sectionRef={projectsSectionRef} />
+      <Skills sectionRef={skillsSectionRef} />
       <Recommandations />
       <Contact sectionRef={contactSectionRef} />
       <Footer

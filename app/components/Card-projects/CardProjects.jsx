@@ -1,13 +1,16 @@
+// CardProjects.js
+
 import React from "react";
 import "./CardProjects.css";
 import TechnoModal from "../TechnoModal/TechnoModal";
 
 function CardProjects(props) {
   return (
-    <div className="card-projects">
+    <div
+      className={`card-projects ${props.isCardVisible ? "animate-card" : ""}`}
+    >
       <div className="cover-image">
-        {/* <img src={props.imageSrc} alt={props.titleProject} /> */}
-        <img src="../../assets/images/test.webp" alt={props.titleProject} />
+        <img src={props.imageSrc} alt={props.titleProject} />
       </div>
       <h3>{props.titleProject}</h3>
       <p>{props.missionProjectResume}</p>

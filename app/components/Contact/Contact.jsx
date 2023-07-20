@@ -1,5 +1,11 @@
 import React from "react";
 import "./Contact.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowRight,
+  faComment,
+  faPaperPlane,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Contact(props) {
   return (
@@ -9,7 +15,8 @@ function Contact(props) {
       <div className="contact-zone">
         <ul className="classic-contact">
           <h4>
-            <i className="fa-regular fa-comment"></i>Discutons ensemble
+            <FontAwesomeIcon icon={faComment} />
+            Discutons ensemble
           </h4>
           <ul>
             <p>Email</p>
@@ -36,7 +43,7 @@ function Contact(props) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Écrivez-moi <i className="fa-solid fa-arrow-right"></i>
+                Écrivez-moi <FontAwesomeIcon icon={faArrowRight} />
               </a>
             </li>
           </ul>
@@ -49,15 +56,21 @@ function Contact(props) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Écrivez-moi<i className="fa-solid fa-arrow-right"></i>
+                Écrivez-moi <FontAwesomeIcon icon={faArrowRight} />
               </a>
             </li>
           </ul>
         </ul>
-        <form method="POST" action="/" className="project-contact">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="/"
+          className="project-contact"
+        >
           <h4>
-            <i className="fa-regular fa-paper-plane"></i>Parlez moi de votre
-            projet{" "}
+            <FontAwesomeIcon icon={faPaperPlane} />
+            Parlez moi de votre projet{" "}
           </h4>
           <div>
             <label htmlFor="name">Nom</label>
@@ -88,7 +101,8 @@ function Contact(props) {
           </div>
 
           <button className="submit" type="submit">
-            Envoyer <i className="fa-solid fa-arrow-right"></i>
+            Envoyer
+            <FontAwesomeIcon icon={faArrowRight} />
           </button>
         </form>
       </div>

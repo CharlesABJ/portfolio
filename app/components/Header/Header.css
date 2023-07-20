@@ -28,6 +28,7 @@ header .logo:active {
     transition: padding-block 0.3s;
 }
 
+
 header nav {
     margin-block: 35px;
     display: flex;
@@ -45,37 +46,50 @@ header nav ul li {
     margin-left: 3vw;
     cursor: pointer;
     color: var(--couleur-nav);
+    transition: 0.3s all;
 }
 
-header nav ul li:nth-child(6) {
+header nav ul li.hidden {
     display: none;
 }
 
 header nav ul li:hover {
     color: var(--couleur-nav-hover);
+    transition: 0.3s all;
 }
 
-header nav ul li.active {
+header nav ul li .nav-on {
+    display: none;
+}
+
+
+header nav ul .nav-responvsive {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li span {
+    color: var(--couleur-nav);
+}
+
+header nav ul li span.active {
     color: var(--couleur-nav-active);
     font-weight: 500;
 }
 
-header nav ul li i {
+header nav ul li svg {
     padding: 5px 7px;
     border-radius: 50%;
     transition: background 0.6s;
 }
 
-header nav ul li i:hover {
+header nav ul li svg:hover {
     background: var(--couleur-fond2);
-    transform: scale(1.03);
+    transform: scale(1.05);
     transition: background 0.3s;
 }
 
-header nav ul li i.off {
-    display: none;
-}
-
+/* Bouton de retour en haut */
 header .up {
     cursor: pointer;
     position: fixed;
@@ -87,13 +101,16 @@ header .up {
     border-radius: 3px;
 }
 
-header .up:hover i {
+header .up:hover svg path {
     color: var(--couleur-nav-hover);
+    transition: 0.2s all;
 }
 
-header .up i {
+header .up svg path {
     color: var(--couleur-nav);
+    transition: 0.2s all;
 }
+
 
 @media screen and (max-width: 930px) {
     header {
@@ -108,16 +125,53 @@ header .up i {
         box-shadow: 0 2px 10px var(--couleur-box-shadow);
     }
 
-    header nav ul li {
+    header nav,
+    header nav ul {
+        width: 100%;
+    }
+
+    header nav ul .nav-responvsive {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header nav ul li .nav-off {
         display: none;
     }
 
+    header nav ul li .nav-on {
+        text-align: center;
+        display: none;
+        padding-right: 51px;
+        border-right: 1px var(--couleur-hover) solid;
+    }
+
+    header nav ul li .nav-on svg {
+        padding: 5px;
+        font-size: 5vw;
+        transition: 0.3s all;
+    }
+
     header nav ul li:nth-child(5),
-    header nav ul li:nth-child(6) {
+    header nav ul li.hidden {
         display: block;
     }
 
     header .up {
         display: none;
+    }
+}
+
+@media screen and (max-width:740px) {
+    header nav ul li .nav-on {
+        padding-right: 0;
+        border-right: none;
+    }
+
+    header nav ul li .nav-on svg:hover {
+        background: var(--couleur-fond2);
+        padding: 3px;
+        transition: 0.3s all;
     }
 }

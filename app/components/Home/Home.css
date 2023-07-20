@@ -1,6 +1,5 @@
 .home {
     background-color: var(--couleur-fond2);
-    padding: 14% 12%;
 }
 
 .home .presentation-profile {
@@ -38,13 +37,17 @@
     margin-right: 2%;
 }
 
-.home .presentation-profile .presentation ul li a i {
-    font-size: 1.5vw;
-    transition: transform 0.5s ease-in-out;
+.home .presentation-profile .presentation ul li a svg {
+    font-size: 2.5vw;
+    transition: 0.2s all ease-in-out;
 }
 
-.home .presentation-profile .presentation ul li a i:hover {
+.home .presentation-profile .presentation ul li a svg:hover {
     transform: scale(1.08);
+}
+
+.home .presentation-profile .presentation ul li a svg:hover path {
+    color: var(--couleur-nav-active);
 }
 
 .home .presentation-profile .profile {
@@ -142,8 +145,8 @@
 
     }
 
-    .home .presentation-profile .presentation ul li a i {
-        font-size: 3.2vw;
+    .home .presentation-profile .presentation ul li a svg {
+        font-size: 3.5vw;
         margin-inline: 2px;
     }
 
@@ -178,13 +181,21 @@
 
 
 @media screen and (max-width:740px) {
+    .home .presentation-profile .presentation h1 {
+        font-size: 8.4vw;
+
+    }
+
+    .home .presentation-profile .presentation p {
+        font-size: 3.5vw;
+    }
 
     .home .technos p {
         font-size: 3.5vw;
     }
 
-    .home .presentation-profile .presentation ul li a i {
-        font-size: 5.2vw;
+    .home .presentation-profile .presentation ul li a svg {
+        font-size: 5vw;
     }
 
     .home .technos .technos-icons li img {

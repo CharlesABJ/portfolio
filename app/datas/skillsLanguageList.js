@@ -16,12 +16,12 @@ export const skillsLanguageList = [
   },
   {
     id: "746d8c52",
-    cardTitle: "React",
+    cardTitle: "React 18",
     cardUrl: "../../assets/images/react.svg",
   },
   {
     id: "1b68f98a",
-    cardTitle: "Express",
+    cardTitle: "Node.js / Express",
     cardUrl: "../../assets/images/node.svg",
   },
 ];

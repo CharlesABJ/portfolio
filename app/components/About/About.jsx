@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./About.css";
 function About(props) {
+  const [seeMore, setSeeMore] = useState("Voir plus");
+
+  const handleClickSeeMore = () => {
+    seeMore === "Voir plus"
+      ? setSeeMore("Voir moins")
+      : setSeeMore("Voir plus");
+  };
   return (
     <section className="about" ref={props.sectionRef}>
       <h2>À Propos de moi</h2>
@@ -26,7 +33,7 @@ function About(props) {
             <br />
             <br />
             <details>
-              <summary>Voir plus</summary>
+              <summary onClick={() => handleClickSeeMore()}>{seeMore}</summary>
               Si vous recherchez{" "}
               <span> un développeur enthousiaste, curieux et dédié</span>,
               n'hésitez pas à me contacter ! <br /> Jetez un œil à mon portfolio

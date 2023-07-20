@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-.contact .contact-zone h4 i {
+.contact .contact-zone h4 svg {
     margin-right: 10px;
 }
 
@@ -34,14 +34,14 @@
     margin-bottom: 15px;
 }
 
-.contact .contact-zone .classic-contact ul li i {
+.contact .contact-zone .classic-contact ul li svg {
     cursor: pointer;
     font-size: 90%;
     padding-left: 10px;
 }
 
-.contact .contact-zone .classic-contact ul li:hover i,
-.contact .contact-zone .classic-contact ul li i:hover,
+.contact .contact-zone .classic-contact ul li:hover svg path,
+.contact .contact-zone .classic-contact ul li svg path:hover,
 .contact .contact-zone .classic-contact ul li a:hover {
     color: var(--couleur-nav-active);
 }
@@ -99,10 +99,21 @@
     font-family: "poppins", "sans-serif";
     margin-top: 20px;
     cursor: pointer;
+    transition: 0.3s all;
 }
 
-.contact .contact-zone .project-contact .submit i {
+.contact .contact-zone .project-contact .submit:hover {
+    transition: 0.3s all;
+    color: var(--couleur-span);
+}
+
+.contact .contact-zone .project-contact .submit:hover svg path {
+    color: var(--couleur-span);
+}
+
+.contact .contact-zone .project-contact .submit svg {
     transform: rotate(-45deg);
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 930px) {
@@ -121,6 +132,7 @@
         display: flex;
         align-items: center;
         margin: 0;
+        padding-inline: 65px;
     }
 
     .contact .contact-zone .project-contact div {
@@ -154,7 +166,7 @@
 
     .contact .contact-zone .project-contact div input,
     .contact .contact-zone .project-contact div textarea {
-        font-size: 3vw;
+        font-size: 2.2vw;
         padding: 15px 20px;
     }
 
@@ -163,6 +175,7 @@
     }
 
     .contact .contact-zone .project-contact div label {
-        font-size: 2.8vw;
+        font-size: 2.2vw;
     }
+
 }

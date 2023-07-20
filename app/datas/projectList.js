@@ -3,7 +3,7 @@ export const projectList = [
     id: 1,
     titleProject: "Kasa",
     yearProject: 2023,
-    imageSrc: "../../assets/images/image.jpg",
+    imageSrc: "../../assets/images/kasa.png",
     missionProjectResume:
       "Développer une application web de location immobilière en utilisant React...",
     missionProject:
@@ -29,46 +29,21 @@ export const projectList = [
     id: 3,
     titleProject: "Nina Carducci",
     yearProject: 2023,
-    imageSrc: "../../assets/images/image.jpg",
+    imageSrc: "../../assets/images/nina-carducci.png",
     missionProjectResume:
       "Débugger et optimiser le site web d'une photographe...",
     missionProject:
-      "Développer une application web de location immobilière en utilisant React, tout en respectant les contraintes techniques spécifiées. Mettre en place des animations CSS pour améliorer l'expérience utilisateur.",
+      "Débugger et optimiser le site web d'une photographe en utilisant React, tout en respectant les contraintes techniques spécifiées. Mettre en place des animations CSS pour améliorer l'expérience utilisateur.",
     technoName: ["React", "Javascript", "CSS"],
     gitHubProject: "https://github.com/CharlesABJ/kasa",
     linkProject: "https://charlesabj-kasa.netlify.app/",
   },
+
   {
     id: 4,
-    titleProject: "Sophie Bluel",
-    yearProject: 2023,
-    imageSrc: "../../assets/images/image.jpg",
-    missionProjectResume:
-      "Création d'un portfolio dynamique pour une architecte d'intérieur...",
-    missionProject:
-      "Développer une application web de location immobilière en utilisant React, tout en respectant les contraintes techniques spécifiées. Mettre en place des animations CSS pour améliorer l'expérience utilisateur.",
-    technoName: ["React", "Javascript", "CSS"],
-    gitHubProject: "https://github.com/CharlesABJ/kasa",
-    linkProject: "https://charlesabj-kasa.netlify.app/",
-  },
-  {
-    id: 5,
-    titleProject: "Menu Maker - Qwenta",
-    yearProject: 2023,
-    imageSrc: "../../assets/images/image.jpg",
-    missionProjectResume:
-      "Planification du développement de l'application web du client...",
-    missionProject:
-      "Développer une application web de location immobilière en utilisant React, tout en respectant les contraintes techniques spécifiées. Mettre en place des animations CSS pour améliorer l'expérience utilisateur.",
-    technoName: ["React", "Javascript", "CSS"],
-    gitHubProject: "https://github.com/CharlesABJ/kasa",
-    linkProject: "https://charlesabj-kasa.netlify.app/",
-  },
-  {
-    id: 6,
     titleProject: "Booki",
     yearProject: 2022,
-    imageSrc: "../../assets/images/image.jpg",
+    imageSrc: "../../assets/images/booki.png",
     missionProjectResume:
       "Intégration d'une maquette pour une agence de voyage...",
     missionProject:
