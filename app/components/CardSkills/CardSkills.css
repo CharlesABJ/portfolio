@@ -1,5 +1,26 @@
 .card-skills {
+    position: relative;
     cursor: pointer;
+}
+
+.card-skills::after {
+    content: attr(data-info);
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 15px;
+    background-color: var(--couleur-nav-active);
+    color: var(--couleur-fond);
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+}
+
+.card-skills:active::after {
+    opacity: 1;
+    transition: 0.3s all;
 }
 
 .card-skills div {

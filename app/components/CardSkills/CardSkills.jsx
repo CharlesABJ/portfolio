@@ -3,7 +3,11 @@ import "./CardSkills.css";
 
 function CardSkills(props) {
   return (
-    <div className="card-skills">
+    <div
+      data-info={props.dataInfo}
+      title={props.subTitle}
+      className={`card-skills ${props.className}`}
+    >
       <div>
         <img src={props.cardUrl} alt={props.cardTitle} />
       </div>

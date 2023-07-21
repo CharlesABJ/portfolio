@@ -14,7 +14,10 @@ function About(props) {
       <p>Qui suis-je exactement ?</p>
       <div className="about-zone">
         <div className="illustration">
-          <img src="../../assets/images/image.jpg" alt="" />
+          <img
+            src="../../assets/images/profil.jpg"
+            alt="une autre photo de moi"
+          />
         </div>
         <div className="presentation">
           <h3>Un développeur web Front-End </h3>

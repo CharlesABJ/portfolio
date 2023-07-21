@@ -6,7 +6,7 @@ import {
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-function About(props) {
+function Home(props) {
   return (
     <section className="home" ref={props.sectionRef}>
       <div className="presentation-profile">
@@ -90,4 +90,4 @@ function About(props) {
   );
 }
 
-export default About;
+export default Home;

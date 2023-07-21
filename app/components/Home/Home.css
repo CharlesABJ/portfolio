@@ -1,5 +1,6 @@
 .home {
     background-color: var(--couleur-fond2);
+    padding: 130px 65px 265px;
 }
 
 .home .presentation-profile {
@@ -46,8 +47,13 @@
     transform: scale(1.08);
 }
 
+.home .presentation-profile .presentation ul li a svg path {
+    transition: 0.3s all;
+}
+
 .home .presentation-profile .presentation ul li a svg:hover path {
     color: var(--couleur-nav-active);
+    transition: 0.3s all;
 }
 
 .home .presentation-profile .profile {
@@ -102,6 +108,7 @@
     transform: scale(1.01);
 }
 
+
 @keyframes technos-animation {
     0% {
         transform: scale(1);
@@ -115,6 +122,10 @@
 
 
 @media screen and (max-width:930px) {
+    .home {
+        padding: 130px 65px 80px;
+    }
+
     .home .presentation-profile {
         flex-direction: column-reverse;
     }

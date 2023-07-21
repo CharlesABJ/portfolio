@@ -57,6 +57,12 @@ h4 {
     font-family: "poppins", sans-serif;
 }
 
+h3 svg path,
+h4 svg path {
+    color: var(--couleur-h3);
+}
+
+
 /* Styles pour les sections */
 section {
     padding: 130px 65px 80px;

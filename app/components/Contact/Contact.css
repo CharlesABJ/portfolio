@@ -26,6 +26,7 @@
 }
 
 .contact .contact-zone .classic-contact ul p {
+    color: var(--couleur-nav);
     color: #6c6c6c;
     margin-bottom: 10px;
 }

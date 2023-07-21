@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Projects.css";
 import CardProjects from "../Card-projects/CardProjects";
 import ModalProject from "../ModalProject/ModalProject";
@@ -23,9 +23,32 @@ function Projects(props) {
     setIsModalOpen(false);
   };
 
+  const handleResize = (e) => {
+    if (e.matches) {
+      setFilteredProjectId(null);
+    }
+  };
+
+  const blockScroll = () => {
+    if (isModalOpen) {
+      document.body.classList.add("modal-open");
+    }
+  };
+  useEffect(() => {
+    blockScroll();
+  }, [isModalOpen]);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 930px)");
+    mediaQuery.addEventListener("change", handleResize);
+    return () => {
+      mediaQuery.removeEventListener("change", handleResize);
+    };
+  }, [filteredProjectId]);
+
   return (
     <section className="projects" ref={props.sectionRef}>
-      <h2>Mes Projets</h2>
+      <h2>Mon Portfolio</h2>
       <p>Un aperçu de mes projets</p>
       <div className="projects-zone">
         <div className="cards-projects-zone">
@@ -45,6 +68,7 @@ function Projects(props) {
         <ul className="select-project-zone">
           {projectList.map((project) => (
             <li
+              className={filteredProjectId === project.id ? " active" : ""}
               onClick={() => chooseOneProject(project.id)}
               data-id={project.id}
               title={`projet n° ${project.id}`}

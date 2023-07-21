@@ -154,6 +154,20 @@ function Header(props) {
     }
   }, [darkMode]);
 
+  const handleResize = (e) => {
+    if (openNav && e.matches) {
+      handleClickOpenNav();
+    }
+  };
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 930px)");
+    mediaQuery.addEventListener("change", handleResize);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleResize);
+    };
+  }, [openNav]);
+
   return (
     <header>
       <div
@@ -177,7 +191,7 @@ function Header(props) {
               <span className="nav-on">{about}</span>
             </li>
             <li onClick={() => scrollToSection(props.projectsSectionRef)}>
-              <span className="nav-off">Projets</span>
+              <span className="nav-off">Portfolio</span>
               <span className="nav-on">{projects}</span>
             </li>
             <li onClick={() => scrollToSection(props.skillsSectionRef)}>

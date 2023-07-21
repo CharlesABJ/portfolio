@@ -27,10 +27,18 @@
 }
 
 .projects .projects-zone .select-project-zone li:hover {
-    background: var(--couleur-image-hover);
     background-color: var(--couleur-hover);
     transform: scale(1.15);
     transition: 0.3s all;
+}
+
+.projects .projects-zone .select-project-zone li.active {
+    background-color: var(--couleur-hover);
+    transition: 0.2s all;
+}
+
+.projects .projects-zone .select-project-zone li.active:hover {
+    transform: scale(1);
 }
 
 

@@ -21,8 +21,8 @@ function Contact(props) {
           <ul>
             <p>Email</p>
             <li>
-              <a className="email" href="mailto:biadjeu.charles@gmail.com">
-                biadjeu.charles@gmail.com
+              <a className="email" href="mailto:charlesabj3@gmail.com">
+                charlesabj3@gmail.com
               </a>
             </li>
           </ul>
@@ -68,6 +68,7 @@ function Contact(props) {
           action="/"
           className="project-contact"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <h4>
             <FontAwesomeIcon icon={faPaperPlane} />
             Parlez moi de votre projet{" "}

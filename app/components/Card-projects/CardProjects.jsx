@@ -10,6 +10,7 @@ function CardProjects(props) {
       className={`card-projects ${props.isCardVisible ? "animate-card" : ""}`}
     >
       <div className="cover-image">
+        <div className="overlay"></div>
         <img src={props.imageSrc} alt={props.titleProject} />
       </div>
       <h3>{props.titleProject}</h3>

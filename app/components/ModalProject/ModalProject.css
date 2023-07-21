@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     z-index: 4;
 }
 
@@ -28,14 +28,13 @@
     flex-direction: column;
     align-items: center;
     overflow: scroll;
-
 }
 
 .modal-container .modal .leave-modal {
     padding: 10px;
     width: 100%;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .modal-container .modal .leave-modal i {
@@ -51,20 +50,28 @@
     height: 100%;
 }
 
-
-
 .modal-container .modal .modal-presentation .quick-presentation .image {
+    position: relative;
+    overflow: hidden;
+    margin-inline: 20px;
     width: 50%;
-    height: 100%;
-    background-color: var(--couleur-fond2);
-    margin: 0 30px 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 25vw;
+    border-radius: 25px;
 }
 
 .modal-container .modal .modal-presentation .quick-presentation .image img {
-    width: 90%;
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    object-fit: contain;
+    cursor: pointer;
+    transform: translateY(0%);
+    transition: 10s ease-in-out;
+}
+
+.modal-container .modal .modal-presentation .quick-presentation .image:hover img {
+    transform: translateY(calc(-100% + 285px));
+    transition: 10s ease-in-out;
 }
 
 .modal-container .modal .modal-presentation .quick-presentation .presentation {
@@ -72,7 +79,6 @@
     width: 50%;
     height: 100%;
 }
-
 
 .modal-container .modal .modal-presentation .quick-presentation .presentation h3 {
     font-size: 2.3vw;
@@ -98,6 +104,8 @@
 .modal-container .modal .modal-presentation .quick-presentation .presentation ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .modal-container .modal .modal-presentation .quick-presentation .presentation ul li {
@@ -122,17 +130,16 @@
 .modal-container .modal .modal-presentation .quick-presentation .presentation .code-and-website a:hover,
 .modal-container .modal .modal-presentation .quick-presentation .presentation .code-and-website a:hover i {
     color: var(--couleur-span);
-    transition: 0.3s all;
 }
 
 .modal-container .modal .modal-presentation .quick-presentation .presentation .code-and-website a i {
     margin-left: 7px;
 }
 
-
 @media screen and (max-width:930px) {
     .modal-container .modal .modal-presentation .quick-presentation {
         flex-direction: column;
+        align-items: center;
     }
 
     .modal-container .modal {
@@ -153,28 +160,20 @@
 
     .modal-container .modal .modal-presentation .quick-presentation .presentation h4 {
         font-size: 1.8vw;
-
     }
 
     .modal-container .modal .modal-presentation .quick-presentation .presentation p {
         font-size: 1.5vw;
     }
 
-
     .modal-container .modal .modal-presentation .quick-presentation .image,
     .modal-container .modal .modal-presentation .quick-presentation .presentation {
         width: 90%;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .modal-container .modal .modal-presentation .quick-presentation {
-        align-items: center;
     }
 
     .modal-container .modal .modal-presentation .quick-presentation .image {
         margin: 20px 0;
+        height: 60vw;
     }
 
     .modal-container .modal .modal-presentation .quick-presentation .presentation {
@@ -190,13 +189,10 @@
     }
 
     .modal-container .modal .modal-presentation .quick-presentation .presentation .code-and-website a {
-
         font-size: 1.5vw;
     }
 
     .modal-container .modal .modal-presentation .quick-presentation .image img {
-        height: 90%;
         object-fit: cover;
     }
-
 }
