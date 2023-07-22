@@ -15,7 +15,7 @@ function About(props) {
       <div className="about-zone">
         <div className="illustration">
           <img
-            src="../../assets/images/profil.jpg"
+            src="../../assets/images/about-image.jpg"
             alt="une autre photo de moi"
           />
         </div>

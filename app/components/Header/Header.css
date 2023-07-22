@@ -99,7 +99,7 @@ header nav ul li.off svg:hover {
 }
 
 header nav ul li.off svg:active {
-    animation: rotate 1s forwards;
+    animation: rotate 0.7s forwards;
 }
 
 

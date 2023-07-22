@@ -1,5 +1,11 @@
 import React from "react";
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookMessenger,
+  faGithub,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Footer(props) {
   const scrollToSection = (ref) => {
@@ -8,7 +14,7 @@ function Footer(props) {
   return (
     <footer>
       <h3>Charles ABJ</h3>
-      <p>Developpeur Fronted</p>
+      <p>Développeur Fronted</p>
       <ul className="nav">
         <li
           className="active"
@@ -31,7 +37,7 @@ function Footer(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa-brands fa-github"></i>
+            <FontAwesomeIcon role={faGithub} />
           </a>
         </li>
         <li>
@@ -41,7 +47,7 @@ function Footer(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa-brands fa-whatsapp"></i>
+            <FontAwesomeIcon role={faWhatsapp} />
           </a>
         </li>
         <li>
@@ -51,11 +57,11 @@ function Footer(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa-brands fa-facebook-messenger"></i>
+            <FontAwesomeIcon role={faFacebookMessenger} />
           </a>
         </li>
       </ul>
-      <span>© charlesabj - 2023. Tous droits réservés.</span>
+      <span>© 2023 • Make with ❤️ By CharlesABJ </span>
       {/* Thank you https://icones8.fr/icons !! */}
     </footer>
   );

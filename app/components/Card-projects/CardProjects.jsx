@@ -3,6 +3,8 @@
 import React from "react";
 import "./CardProjects.css";
 import TechnoModal from "../TechnoModal/TechnoModal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 function CardProjects(props) {
   return (
@@ -16,7 +18,8 @@ function CardProjects(props) {
       <h3>{props.titleProject}</h3>
       <p>{props.missionProjectResume}</p>
       <p onClick={props.onClick} className="see-more">
-        Voir plus <i className="fa-solid fa-arrow-right"></i>
+        Voir plus
+        <FontAwesomeIcon role={faArrowRight} />
       </p>
       <ul className="techno-use">
         {props.technoName.map((techno, index) => (

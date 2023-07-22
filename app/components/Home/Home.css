@@ -5,6 +5,7 @@
 
 .home .presentation-profile {
     display: flex;
+    align-items: center;
 }
 
 .home .presentation-profile .presentation {
@@ -61,6 +62,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.home .presentation-profile .profile img {
+    width: 100%;
+
 }
 
 .home .technos {
@@ -128,9 +134,6 @@
 
     .home .presentation-profile {
         flex-direction: column-reverse;
-    }
-
-    .home .presentation-profile {
         width: 100%;
         align-items: center;
         justify-content: center;
@@ -140,6 +143,11 @@
     .home .presentation-profile .presentation {
         width: 100%;
     }
+
+    .home .presentation-profile .profile {
+        width: 70%;
+    }
+
 
     .home .presentation-profile .presentation h1 {
         font-size: 6.4vw;

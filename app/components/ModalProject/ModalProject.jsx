@@ -2,6 +2,12 @@ import React from "react";
 import "./ModalProject.css";
 import TechnoModal from "../TechnoModal/TechnoModal";
 import { projectList } from "../../datas/projectList";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowUpRightFromSquare,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function ModalProject(props) {
   // Récupérer le projet spécifique de projectList en utilisant projectIndex
@@ -12,7 +18,7 @@ function ModalProject(props) {
       <div onClick={props.onClose} className="overlay trigger"></div>
       <div className="modal">
         <div className="leave-modal">
-          <i className="fa-solid fa-xmark"></i>
+          <FontAwesomeIcon role={faXmark} />
         </div>
 
         <div className="modal-presentation">
@@ -47,7 +53,8 @@ function ModalProject(props) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Code<i className="fa-brands fa-github"></i>
+                  Code
+                  <FontAwesomeIcon role={faGithub} />
                 </a>
                 <a
                   href={project.linkProject}
@@ -55,7 +62,7 @@ function ModalProject(props) {
                   rel="noopener noreferrer"
                 >
                   Voir le site
-                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                  <FontAwesomeIcon role={faArrowUpRightFromSquare} />
                 </a>
               </div>
             </div>

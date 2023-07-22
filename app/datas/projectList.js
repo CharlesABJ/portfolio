@@ -14,9 +14,9 @@ export const projectList = [
   },
   {
     id: 2,
-    titleProject: "Mon Vieux Grimmoire",
+    titleProject: "Mon Vieux Grimoire",
     yearProject: 2023,
-    imageSrc: "../../assets/images/image.jpg",
+    imageSrc: "../../assets/images/mon-vieux-grimoire.png",
     missionProjectResume:
       "Développer une application web de location immobilière en utilisant React...",
     missionProject:

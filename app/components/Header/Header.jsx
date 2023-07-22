@@ -105,8 +105,13 @@ function Header(props) {
   };
 
   const [darkMode, setDarkMode] = useState(() => {
-    const savedMode = localStorage.getItem("darkMode");
-    return savedMode !== null ? JSON.parse(savedMode) : false;
+    if (typeof window !== "undefined") {
+      const savedMode = localStorage.getItem("darkMode");
+      return savedMode !== null ? JSON.parse(savedMode) : false;
+    } else {
+      // Gérer le cas où localStorage n'est pas disponible (par exemple, en mode serveur)
+      return false;
+    }
   });
 
   const handleClickChangeMode = () => {
@@ -154,6 +159,7 @@ function Header(props) {
     }
   }, [darkMode]);
 
+  //Rénitialiser la barre de navigation lors du passage du mode mobile à desktop
   const handleResize = (e) => {
     if (openNav && e.matches) {
       handleClickOpenNav();
@@ -176,7 +182,12 @@ function Header(props) {
       >
         <img
           title="Charles ABJ"
-          src="../../assets/images/profil.png"
+          className={darkMode ? "dark-mode" : "light-mode"}
+          src={
+            darkMode
+              ? "../../assets/images/logo-dark.png"
+              : "../../assets/images/logo-light.png"
+          }
           alt="It's me ;)"
         />
       </div>
@@ -184,24 +195,34 @@ function Header(props) {
         <ul>
           <div className="nav-responvsive">
             <li onClick={() => scrollToSection(props.homeSectionRef)}>
-              <span className="nav-on">{home}</span>
+              <span title="Accueil" className="nav-on">
+                {home}
+              </span>
             </li>
             <li onClick={() => scrollToSection(props.aboutSectionRef)}>
               <span className="nav-off active">À propos</span>
-              <span className="nav-on">{about}</span>
+              <span title="À propos" className="nav-on">
+                {about}
+              </span>
             </li>
             <li onClick={() => scrollToSection(props.projectsSectionRef)}>
               <span className="nav-off">Portfolio</span>
-              <span className="nav-on">{projects}</span>
+              <span title="Portfolio" className="nav-on">
+                {projects}
+              </span>
             </li>
             <li onClick={() => scrollToSection(props.skillsSectionRef)}>
               <span className="nav-off">Compétences</span>
-              <span className="nav-on">{skills}</span>
+              <span title="Compétences" className="nav-on">
+                {skills}
+              </span>
             </li>
 
             <li onClick={() => scrollToSection(props.contactSectionRef)}>
               <span className="nav-off">Contacter</span>
-              <span className="nav-on">{contact}</span>
+              <span title="Contacter" className="nav-on">
+                {contact}
+              </span>
             </li>
             <li className="off" onClick={handleClickChangeMode}>
               <FontAwesomeIcon icon={darkMode ? faSun : faMoon} />

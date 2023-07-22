@@ -101,6 +101,7 @@
 }
 
 @media screen and (max-width: 930px) {
+
     .card-projects {
         margin-inline: 20px;
     }
@@ -108,6 +109,10 @@
     .card-projects .cover-image {
         height: 370px;
         height: 55vw;
+    }
+
+    .card-projects .cover-image:hover img {
+        transform: translateY(calc(-100% + 55vw));
     }
 
     .card-projects .techno-use li span {
@@ -120,9 +125,6 @@
         padding: 15px 15px 40px;
     }
 
-    .card-projects .cover-image:hover img {
-        transform: translateY(calc(-100% + 55vw));
-    }
 
     .card-projects h3 {
         font-size: 3.5vw;
