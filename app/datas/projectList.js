@@ -34,7 +34,7 @@ export const projectList = [
       "Débugger et optimiser le site web d'une photographe...",
     missionProject:
       "Débugger et optimiser le site web d'une photographe en utilisant React, tout en respectant les contraintes techniques spécifiées. Mettre en place des animations CSS pour améliorer l'expérience utilisateur.",
-    technoName: ["React", "Javascript", "CSS"],
+    technoName: ["React", "Javascript", "WebPerf"],
     gitHubProject: "https://github.com/CharlesABJ/kasa",
     linkProject: "https://charlesabj-kasa.netlify.app/",
   },
@@ -48,7 +48,7 @@ export const projectList = [
       "Intégration d'une maquette pour une agence de voyage...",
     missionProject:
       "Intégration d'une maquette pour une agence de voyage en utilisant HTML et CSS. L'objectif est de créer une interface web responsive et attrayante, en respectant les spécifications et les contraintes techniques. .<br>Notamment  l'ergonomie, l'accessibilité et les bonnes pratiques de développement web pour offrir une expérience utilisateur optimale.",
-    technoName: ["React", "Javascript", "CSS"],
+    technoName: ["SEO", "Javascript", "Figma"],
     gitHubProject: "https://github.com/CharlesABJ/kasa",
     linkProject: "https://charlesabj-kasa.netlify.app/",
   },

@@ -1,12 +1,12 @@
 "use client";
 // import Font Awesome CSS
-import "@fortawesome/fontawesome-svg-core/styles.css";
 
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 // Tell Font Awesome to skip adding the CSS automatically
 // since it's already imported above
 config.autoAddCss = false;
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./page.css";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
@@ -16,6 +16,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
 import Recommandations from "./components/Recommandations/Recommandations";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 function page() {
   const homeSectionRef = useRef(null);
@@ -23,6 +24,62 @@ function page() {
   const skillsSectionRef = useRef(null);
   const projectsSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
+
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window !== "undefined") {
+      const savedMode = localStorage.getItem("darkMode");
+      return savedMode !== null ? JSON.parse(savedMode) : false;
+    } else {
+      // Gérer le cas où localStorage n'est pas disponible (par exemple, en mode serveur)
+      return false;
+    }
+  });
+
+  const handleClickChangeMode = () => {
+    const newMode = !darkMode;
+    setDarkMode(newMode);
+    localStorage.setItem("darkMode", JSON.stringify(newMode));
+  };
+
+  useEffect(() => {
+    const root = document.documentElement.style;
+    if (darkMode) {
+      root.setProperty("--couleur-fond", "#1d1d1d");
+      root.setProperty("--couleur-fond2", "#1a1a1a");
+      root.setProperty("--couleur-fond-header", "#1e1e1e");
+      root.setProperty("--couleur-texte", "#f6f6f6");
+      root.setProperty("--couleur-texte-hover", "#8c8c8cc5");
+      root.setProperty("--couleur-span", "#f19766");
+      root.setProperty("--couleur-nav", "#a6a6a6");
+      root.setProperty("--couleur-up-button", "#2e2e2e");
+      root.setProperty("--couleur-nav-hover", "#606060");
+      root.setProperty("--couleur-nav-active", "#dcdcdc");
+      root.setProperty("--couleur-hover", "#2b2b2bce");
+      root.setProperty("--couleur-image-hover", "#ffffffde");
+      root.setProperty("--couleur-h3", "#b1b1b1");
+      root.setProperty("--couleur-box-shadow", "#00000035");
+      root.setProperty("--couleur-border", "#4e5255");
+      root.setProperty("--couleur-p", "#d0d0d0db");
+    } else {
+      root.setProperty("--couleur-fond", "#fff");
+      root.setProperty("--couleur-fond2", "#f9f9f9");
+      root.setProperty("--couleur-fond-header", "#fff");
+      root.setProperty("--couleur-texte", "#2d2e32");
+      root.setProperty("--couleur-texte-hover", "#2c2c2cc5");
+      root.setProperty("--couleur-span", "#0E6899");
+      root.setProperty("--couleur-nav", "#6c6c6c");
+      root.setProperty("--couleur-nav-hover", "#606060");
+      root.setProperty("--couleur-hover", "#d1d1d1");
+      root.setProperty("--couleur-image-hover", "#ffffff69");
+      root.setProperty("--couleur-nav-active", "#4d4d4d");
+      root.setProperty("--couleur-h3", "#4d4d4d");
+      root.setProperty("--couleur-up-button", "#fff");
+      root.setProperty("--couleur-box-shadow", "#0000001a");
+      root.setProperty("--couleur-border", "#2d2e32");
+      root.setProperty("--couleur-p", "#2d2e32db");
+    }
+  }, [darkMode]);
+
   return (
     <div>
       <Header
@@ -31,10 +88,31 @@ function page() {
         skillsSectionRef={skillsSectionRef}
         projectsSectionRef={projectsSectionRef}
         contactSectionRef={contactSectionRef}
+        logoSrc={
+          darkMode
+            ? "../../assets/images/logo-dark.png"
+            : "../../assets/images/logo-light.png"
+        }
+        logoClassName={darkMode ? "dark-mode" : "light-mode"}
+        handleClickChangeMode={() => handleClickChangeMode()}
+        titleChangeMode={
+          darkMode ? "Passer au Light Mode" : "Passer au Dark Mode"
+        }
+        iconChangeMode={darkMode ? faSun : faMoon}
       />
-      <Home sectionRef={homeSectionRef} />
+      <Home
+        sectionRef={homeSectionRef}
+        profilSrc={
+          darkMode
+            ? "../../assets/images/logo-dark.png"
+            : "../../assets/images/logo-light.png"
+        }
+      />
       <About sectionRef={aboutSectionRef} />
-      <Projects sectionRef={projectsSectionRef} />
+      <Projects
+        sectionRef={projectsSectionRef}
+        overlayClassName={darkMode ? "dark-mode" : null}
+      />
       <Skills sectionRef={skillsSectionRef} />
       <Recommandations />
       <Contact sectionRef={contactSectionRef} />

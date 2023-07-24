@@ -17,12 +17,16 @@
 }
 
 .card-projects .cover-image .overlay {
-    background: rgba(31, 31, 31, 0.205);
+    background: #1f1f1f1a;
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 4;
     display: none;
+}
+
+.card-projects .cover-image .overlay.dark-mode {
+    display: block;
 }
 
 .card-projects .cover-image img {
@@ -72,7 +76,7 @@
 }
 
 .card-projects .see-more:hover,
-.card-projects .see-more:hover i {
+.card-projects .see-more:hover svg path {
     color: var(--couleur-texte-hover);
 }
 

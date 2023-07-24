@@ -17,10 +17,9 @@ function ModalProject(props) {
     <div style={props.style} className={props.className || "modal-container"}>
       <div onClick={props.onClose} className="overlay trigger"></div>
       <div className="modal">
-        <div className="leave-modal">
-          <FontAwesomeIcon role={faXmark} />
+        <div onClick={props.onClose} className="leave-modal">
+          <FontAwesomeIcon icon={faXmark} />
         </div>
-
         <div className="modal-presentation">
           <h3 className="responsive-create">
             <span>{project.titleProject}</span>
@@ -54,7 +53,7 @@ function ModalProject(props) {
                   rel="noopener noreferrer"
                 >
                   Code
-                  <FontAwesomeIcon role={faGithub} />
+                  <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a
                   href={project.linkProject}
@@ -62,7 +61,7 @@ function ModalProject(props) {
                   rel="noopener noreferrer"
                 >
                   Voir le site
-                  <FontAwesomeIcon role={faArrowUpRightFromSquare} />
+                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </a>
               </div>
             </div>

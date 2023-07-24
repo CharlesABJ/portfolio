@@ -12,14 +12,14 @@ function CardProjects(props) {
       className={`card-projects ${props.isCardVisible ? "animate-card" : ""}`}
     >
       <div className="cover-image">
-        <div className="overlay"></div>
+        <div className={`overlay ${props.overlayClassName}`}></div>
         <img src={props.imageSrc} alt={props.titleProject} />
       </div>
       <h3>{props.titleProject}</h3>
       <p>{props.missionProjectResume}</p>
       <p onClick={props.onClick} className="see-more">
         Voir plus
-        <FontAwesomeIcon role={faArrowRight} />
+        <FontAwesomeIcon icon={faArrowRight} />
       </p>
       <ul className="techno-use">
         {props.technoName.map((techno, index) => (

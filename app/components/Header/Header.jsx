@@ -6,9 +6,8 @@ import {
   faArrowUp,
   faXmark,
   faBarsStaggered,
-  faSun,
-  faMoon,
 } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookMessenger } from "@fortawesome/free-brands-svg-icons";
 const home = (
   <svg
     stroke="currentColor"
@@ -104,61 +103,6 @@ function Header(props) {
     setOpenNav(!openNav);
   };
 
-  const [darkMode, setDarkMode] = useState(() => {
-    if (typeof window !== "undefined") {
-      const savedMode = localStorage.getItem("darkMode");
-      return savedMode !== null ? JSON.parse(savedMode) : false;
-    } else {
-      // Gérer le cas où localStorage n'est pas disponible (par exemple, en mode serveur)
-      return false;
-    }
-  });
-
-  const handleClickChangeMode = () => {
-    const newMode = !darkMode;
-    setDarkMode(newMode);
-    localStorage.setItem("darkMode", JSON.stringify(newMode));
-  };
-
-  useEffect(() => {
-    const root = document.documentElement.style;
-    if (darkMode) {
-      root.setProperty("--couleur-fond", "#1d1d1d");
-      root.setProperty("--couleur-fond2", "#1a1a1a");
-      root.setProperty("--couleur-fond-header", "#1e1e1e");
-      root.setProperty("--couleur-texte", "#f6f6f6");
-      root.setProperty("--couleur-texte-hover", "#8c8c8cc5");
-      root.setProperty("--couleur-span", "#f19766");
-      root.setProperty("--couleur-nav", "#a6a6a6");
-      root.setProperty("--couleur-up-button", "#2e2e2e");
-      root.setProperty("--couleur-nav-hover", "#606060");
-      root.setProperty("--couleur-nav-active", "#dcdcdc");
-      root.setProperty("--couleur-hover", "#2b2b2bce");
-      root.setProperty("--couleur-image-hover", "#ffffffde");
-      root.setProperty("--couleur-h3", "#b1b1b1");
-      root.setProperty("--couleur-box-shadow", "#00000035");
-      root.setProperty("--couleur-border", "#4e5255");
-      root.setProperty("--couleur-p", "#d0d0d0db");
-    } else {
-      root.setProperty("--couleur-fond", "#fff");
-      root.setProperty("--couleur-fond2", "#f9f9f9");
-      root.setProperty("--couleur-fond-header", "#fff");
-      root.setProperty("--couleur-texte", "#2d2e32");
-      root.setProperty("--couleur-texte-hover", "#2c2c2cc5");
-      root.setProperty("--couleur-span", "#0E6899");
-      root.setProperty("--couleur-nav", "#6c6c6c");
-      root.setProperty("--couleur-nav-hover", "#606060");
-      root.setProperty("--couleur-hover", "#d1d1d1");
-      root.setProperty("--couleur-image-hover", "#ffffff69");
-      root.setProperty("--couleur-nav-active", "#4d4d4d");
-      root.setProperty("--couleur-h3", "#4d4d4d");
-      root.setProperty("--couleur-up-button", "#fff");
-      root.setProperty("--couleur-box-shadow", "#0000001a");
-      root.setProperty("--couleur-border", "#2d2e32");
-      root.setProperty("--couleur-p", "#2d2e32db");
-    }
-  }, [darkMode]);
-
   //Rénitialiser la barre de navigation lors du passage du mode mobile à desktop
   const handleResize = (e) => {
     if (openNav && e.matches) {
@@ -182,18 +126,15 @@ function Header(props) {
       >
         <img
           title="Charles ABJ"
-          className={darkMode ? "dark-mode" : "light-mode"}
-          src={
-            darkMode
-              ? "../../assets/images/logo-dark.png"
-              : "../../assets/images/logo-light.png"
-          }
+          className={props.logoClassName}
+          src={props.logoSrc}
           alt="It's me ;)"
         />
       </div>
+      <FontAwesomeIcon icon={faFacebookMessenger} />
       <nav>
         <ul>
-          <div className="nav-responvsive">
+          <ul className="nav-responvsive">
             <li onClick={() => scrollToSection(props.homeSectionRef)}>
               <span title="Accueil" className="nav-on">
                 {home}
@@ -224,12 +165,18 @@ function Header(props) {
                 {contact}
               </span>
             </li>
-            <li className="off" onClick={handleClickChangeMode}>
-              <FontAwesomeIcon icon={darkMode ? faSun : faMoon} />
+            <li className="off" onClick={props.handleClickChangeMode}>
+              <FontAwesomeIcon
+                title={props.titleChangeMode}
+                icon={props.iconChangeMode}
+              />
             </li>
-          </div>
-          <li className="hidden" onClick={handleClickOpenNav}>
-            <FontAwesomeIcon icon={openNav ? faXmark : faBarsStaggered} />
+          </ul>
+          <li className="hidden" onClick={() => handleClickOpenNav()}>
+            <FontAwesomeIcon
+              title={openNav ? "Fermer" : "Ouvrir"}
+              icon={openNav ? faXmark : faBarsStaggered}
+            />
           </li>
         </ul>
       </nav>

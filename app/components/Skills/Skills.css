@@ -4,11 +4,11 @@
 }
 
 .skills .languages-logi h3,
-.skills .languages-logi h3 i {
+.skills .languages-logi h3 svg path {
     color: var(--couleur-h3);
 }
 
-.skills .languages-logi h3 i {
+.skills .languages-logi h3 svg {
     margin-right: 10px;
 }
 

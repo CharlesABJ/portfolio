@@ -22,7 +22,7 @@
     background: var(--couleur-fond);
     border-radius: 5px;
     top: 45%;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, -45%);
     display: flex;
     flex-direction: column;
@@ -37,9 +37,14 @@
     justify-content: flex-end;
 }
 
-.modal-container .modal .leave-modal i {
+.modal-container .modal .leave-modal svg {
     cursor: pointer;
 }
+
+.modal-container .modal .leave-modal svg:hover path {
+    color: var(--couleur-texte-hover);
+}
+
 
 .modal-container .modal .modal-presentation .responsive-create {
     display: none;
@@ -128,11 +133,11 @@
 }
 
 .modal-container .modal .modal-presentation .quick-presentation .presentation .code-and-website a:hover,
-.modal-container .modal .modal-presentation .quick-presentation .presentation .code-and-website a:hover i {
+.modal-container .modal .modal-presentation .quick-presentation .presentation .code-and-website a:hover svg path {
     color: var(--couleur-span);
 }
 
-.modal-container .modal .modal-presentation .quick-presentation .presentation .code-and-website a i {
+.modal-container .modal .modal-presentation .quick-presentation .presentation .code-and-website a svg {
     margin-left: 7px;
 }
 

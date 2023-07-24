@@ -61,6 +61,7 @@ function Projects(props) {
               <CardProjects
                 onClick={() => handleClickOpenModal(index)}
                 key={index}
+                overlayClassName={props.overlayClassName}
                 {...project}
               />
             ))}

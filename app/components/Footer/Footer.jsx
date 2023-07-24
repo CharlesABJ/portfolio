@@ -37,7 +37,7 @@ function Footer(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon role={faGithub} />
+            <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
         <li>
@@ -47,17 +47,17 @@ function Footer(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon role={faWhatsapp} />
+            <FontAwesomeIcon icon={faWhatsapp} />
           </a>
         </li>
         <li>
           <a
             title="Messenger"
-            href=""
+            href="https://m.me/100094215251917"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon role={faFacebookMessenger} />
+            <FontAwesomeIcon icon={faFacebookMessenger} />
           </a>
         </li>
       </ul>

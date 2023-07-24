@@ -33,22 +33,22 @@ footer .nav li:hover {
 
 footer .social li {
     cursor: pointer;
-    margin-right: 30px;
+    margin-inline: 25px;
 }
 
-footer .social li i {
-    font-size: 17px;
+footer .social li svg {
+    font-size: 20px;
     transition: 0.3s all;
 }
 
-footer .social li i:hover {
+footer .social li svg:hover {
     transform: scale(1.1);
     transition: 0.3s all;
 }
 
 footer span {
     display: inline-block;
-    color: #6c6c6c;
+    color: var(--couleur-nav);
     margin-top: 35px;
     font-size: small;
 }

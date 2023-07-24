@@ -7,10 +7,6 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 function Home(props) {
-  let profil;
-  if (typeof document !== "undefined") {
-    profil = document.querySelector("header img");
-  }
   return (
     <section className="home" ref={props.sectionRef}>
       <div className="presentation-profile">
@@ -64,14 +60,7 @@ function Home(props) {
           </ul>
         </div>
         <div className="profile">
-          <img
-            src={
-              profil !== null && profil.classList.contains("dark-mode")
-                ? "../../assets/images/logo-dark.png"
-                : "../../assets/images/logo-light.png"
-            }
-            alt="C'est moi :)"
-          />
+          <img src={props.profilSrc} alt="C'est moi :)" />
         </div>
       </div>
       <div className="technos">
