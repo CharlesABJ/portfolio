@@ -13,7 +13,7 @@ function CardProjects(props) {
     >
       <div className="cover-image">
         <div className={`overlay ${props.overlayClassName}`}></div>
-        <img src={props.imageSrc} alt={props.titleProject} />
+        <img src={props.imageSrc} alt={props.titleProject} loading="lazy" />
       </div>
       <h3>{props.titleProject}</h3>
       <p>{props.missionProjectResume}</p>

@@ -8,7 +8,7 @@ export const skillsLanguageList = [
   {
     id: "e2b7189d",
     cardTitle: "CSS",
-    subtitle: "CSS3",
+    subtitle: "CSS3, Pixel perfect, Responsive design",
     cardUrl: "../../assets/images/css.svg",
   },
   {

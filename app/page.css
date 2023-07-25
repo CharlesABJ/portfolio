@@ -37,7 +37,9 @@ body,
 header {
     margin: 0 auto;
     max-width: 1500px;
+    min-width: 340px;
     background-color: var(--couleur-fond2);
+    transition: 0.3s background-color;
 }
 
 body.modal-open {
@@ -67,7 +69,8 @@ h4 svg path {
 /* Styles pour les sections */
 section {
     padding: 130px 65px 80px;
-    background: var(--couleur-fond);
+    background-color: var(--couleur-fond);
+    transition: 0.3s background-color;
 }
 
 section h2,

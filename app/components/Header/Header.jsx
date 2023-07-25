@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 // Import the FontAwesomeIcon component
@@ -12,7 +13,7 @@ const home = (
   <svg
     stroke="currentColor"
     fill="currentColor"
-    stroke-width="0"
+    strokeWidth="0"
     viewBox="0 0 1024 1024"
     height="1em"
     width="1em"
@@ -26,7 +27,7 @@ const about = (
   <svg
     stroke="currentColor"
     fill="currentColor"
-    stroke-width="0"
+    strokeWidth="0"
     viewBox="0 0 1024 1024"
     height="1em"
     width="1em"
@@ -40,7 +41,7 @@ const projects = (
   <svg
     stroke="currentColor"
     fill="currentColor"
-    stroke-width="0"
+    strokeWidth="0"
     viewBox="0 0 24 24"
     height="1em"
     width="1em"
@@ -55,7 +56,7 @@ const skills = (
   <svg
     stroke="currentColor"
     fill="currentColor"
-    stroke-width="0"
+    strokeWidth="0"
     viewBox="0 0 24 24"
     height="1em"
     width="1em"
@@ -72,7 +73,7 @@ const contact = (
   <svg
     stroke="currentColor"
     fill="currentColor"
-    stroke-width="0"
+    strokeWidth="0"
     viewBox="0 0 24 24"
     height="1em"
     width="1em"
@@ -131,47 +132,49 @@ function Header(props) {
           alt="It's me ;)"
         />
       </div>
-      <FontAwesomeIcon icon={faFacebookMessenger} />
+      {/* <FontAwesomeIcon icon={faFacebookMessenger} /> */}
       <nav>
         <ul>
-          <ul className="nav-responvsive">
-            <li onClick={() => scrollToSection(props.homeSectionRef)}>
-              <span title="Accueil" className="nav-on">
-                {home}
-              </span>
-            </li>
-            <li onClick={() => scrollToSection(props.aboutSectionRef)}>
-              <span className="nav-off active">À propos</span>
-              <span title="À propos" className="nav-on">
-                {about}
-              </span>
-            </li>
-            <li onClick={() => scrollToSection(props.projectsSectionRef)}>
-              <span className="nav-off">Portfolio</span>
-              <span title="Portfolio" className="nav-on">
-                {projects}
-              </span>
-            </li>
-            <li onClick={() => scrollToSection(props.skillsSectionRef)}>
-              <span className="nav-off">Compétences</span>
-              <span title="Compétences" className="nav-on">
-                {skills}
-              </span>
-            </li>
+          <li className="nav-responvsive">
+            <ul>
+              <li onClick={() => scrollToSection(props.homeSectionRef)}>
+                <span title="Accueil" className="nav-on">
+                  {home}
+                </span>
+              </li>
+              <li onClick={() => scrollToSection(props.aboutSectionRef)}>
+                <span className="nav-off active">À propos</span>
+                <span title="À propos" className="nav-on">
+                  {about}
+                </span>
+              </li>
+              <li onClick={() => scrollToSection(props.projectsSectionRef)}>
+                <span className="nav-off">Portfolio</span>
+                <span title="Portfolio" className="nav-on">
+                  {projects}
+                </span>
+              </li>
+              <li onClick={() => scrollToSection(props.skillsSectionRef)}>
+                <span className="nav-off">Compétences</span>
+                <span title="Compétences" className="nav-on">
+                  {skills}
+                </span>
+              </li>
 
-            <li onClick={() => scrollToSection(props.contactSectionRef)}>
-              <span className="nav-off">Contacter</span>
-              <span title="Contacter" className="nav-on">
-                {contact}
-              </span>
-            </li>
-            <li className="off" onClick={props.handleClickChangeMode}>
-              <FontAwesomeIcon
-                title={props.titleChangeMode}
-                icon={props.iconChangeMode}
-              />
-            </li>
-          </ul>
+              <li onClick={() => scrollToSection(props.contactSectionRef)}>
+                <span className="nav-off">Contacter</span>
+                <span title="Contacter" className="nav-on">
+                  {contact}
+                </span>
+              </li>
+              <li className="off" onClick={props.handleClickChangeMode}>
+                <FontAwesomeIcon
+                  title={props.titleChangeMode}
+                  icon={props.iconChangeMode}
+                />
+              </li>
+            </ul>
+          </li>
           <li className="hidden" onClick={() => handleClickOpenNav()}>
             <FontAwesomeIcon
               title={openNav ? "Fermer" : "Ouvrir"}

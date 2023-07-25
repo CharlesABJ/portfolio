@@ -39,6 +39,7 @@ function page() {
     const newMode = !darkMode;
     setDarkMode(newMode);
     localStorage.setItem("darkMode", JSON.stringify(newMode));
+    //Rajouter transition
   };
 
   useEffect(() => {
@@ -90,8 +91,8 @@ function page() {
         contactSectionRef={contactSectionRef}
         logoSrc={
           darkMode
-            ? "../../assets/images/logo-dark.png"
-            : "../../assets/images/logo-light.png"
+            ? "../../assets/images/logo-dark.webp"
+            : "../../assets/images/logo-light.webp"
         }
         logoClassName={darkMode ? "dark-mode" : "light-mode"}
         handleClickChangeMode={() => handleClickChangeMode()}
@@ -104,8 +105,8 @@ function page() {
         sectionRef={homeSectionRef}
         profilSrc={
           darkMode
-            ? "../../assets/images/logo-dark.png"
-            : "../../assets/images/logo-light.png"
+            ? "../../assets/images/logo-dark.webp"
+            : "../../assets/images/logo-light.webp"
         }
       />
       <About sectionRef={aboutSectionRef} />

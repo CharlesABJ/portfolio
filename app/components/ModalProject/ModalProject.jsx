@@ -67,9 +67,7 @@ function ModalProject(props) {
             </div>
           </div>
           <div className="pictures-of-project">
-            <div className="phone"></div>
-            <div className="tablette"></div>
-            <div className="desktop"></div>
+            <img src={project.pictures} alt={project.titleProject} />
           </div>
         </div>
       </div>
