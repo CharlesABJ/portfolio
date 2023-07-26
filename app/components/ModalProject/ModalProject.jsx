@@ -40,6 +40,33 @@ function ModalProject(props) {
               </h4>
               <h4>Mission :</h4>
               <p>{project.missionProject}</p>
+              <h4>Points forts et réalisations :</h4>
+              <ul className="strong-points">
+                {project.strongPoint.map((e, index) => (
+                  <li key={index}>{e}</li>
+                ))}
+                {/* <li>
+                  Conception réactive : J'ai développé une interface utilisateur
+                  réactive en utilisant des techniques de conception adaptative,
+                  garantissant une expérience cohérente sur les ordinateurs de
+                  bureau, les tablettes et les smartphones.{" "}
+                </li>
+                <li>
+                  Performances optimisées : J'ai minutieusement optimisé les
+                  performances de l'application en utilisant des techniques de
+                  chargement progressif des images et en minimisant les demandes
+                  réseau.
+                </li>
+
+                <li>
+                  {" "}
+                  Animations CSS : J'ai implémenté des animations CSS pour
+                  rendre l'expérience utilisateur plus agréable et immersive,
+                  notamment lors des transitions entre les pages et lors de
+                  l'affichage des galeries d'images.
+                </li> */}
+              </ul>
+
               <h4>Technologies utilisées</h4>
               <ul>
                 {project.technoName.map((techno, index) => (

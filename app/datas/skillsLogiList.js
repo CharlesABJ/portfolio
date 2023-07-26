@@ -3,13 +3,13 @@ export const skillsLogiList = [
     id: "4be9a35f",
     cardTitle: "Vscode",
     cardUrl: "../../assets/images/vscode.svg",
-    subtitle: "Vscode",
+    subtitle: "Extension, Débogage, ",
   },
   {
     id: "68da5e91",
     cardTitle: "Git",
     cardUrl: "../../assets/images/git.svg",
-    subtitle: "Git / GitHub",
+    subtitle: "GitHub, Clonage de dépôts, Commit, Fusion de branches,",
   },
   {
     id: "f9c286d2",
@@ -21,12 +21,12 @@ export const skillsLogiList = [
     id: "8b076413",
     cardTitle: "NPM",
     cardUrl: "../../assets/images/npm.svg",
-    subtitle: "NPM",
+    subtitle: "Gestion des dépendances",
   },
   {
     id: "273d1b7a",
     cardTitle: "Trello",
     cardUrl: "../../assets/images/trello.svg",
-    subtitle: "Trello",
+    subtitle: "Gestion de projet",
   },
 ];

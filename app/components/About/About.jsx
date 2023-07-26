@@ -31,8 +31,8 @@ function About(props) {
             onMouseLeave={() => handleMouseLeave()}
             src={
               isHovered
-                ? "../../assets/images/about-image-colored.jpg"
-                : "../../assets/images/about-image.jpg"
+                ? "../../assets/images/about-image-colored.webp"
+                : "../../assets/images/about-image.webp"
             }
             alt="une autre photo de moi"
           />
