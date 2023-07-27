@@ -27,8 +27,6 @@
 }
 
 .contact .contact-zone .classic-contact ul p {
-    color: var(--couleur-nav);
-    color: #6c6c6c;
     margin-bottom: 10px;
 }
 
@@ -76,6 +74,7 @@
     top: -10px;
     left: 15px;
     font-size: small;
+    transition: 0.3s background-color;
 }
 
 .contact .contact-zone .project-contact div input,
@@ -86,6 +85,7 @@
     outline-color: var(--couleur-nav);
     padding: 20px;
     width: 100%;
+    transition: 0.3s background-color;
 }
 
 .contact .contact-zone .project-contact div textarea {
@@ -134,7 +134,7 @@
         display: flex;
         align-items: center;
         margin: 0;
-        padding-inline: 65px;
+        padding-inline: 45px;
     }
 
     .contact .contact-zone .project-contact div {

@@ -3,6 +3,7 @@ footer {
     text-align: center;
     padding: 50px 65px 10px;
     background: var(--couleur-fond);
+    transition: 0.3s background-color;
 }
 
 footer h3,

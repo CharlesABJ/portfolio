@@ -33,8 +33,8 @@ export const projectList = [
       "Respect des bonnes pratiques Green Code : J'ai optimisé les performances en tenant compte de la taille des images, ce qui a amélioré l'expérience utilisateur tout en minimisant l'impact environnemental du site.",
     ],
     technoName: ["Green IT", "Express.js", "MongoDB", "RESTful API"],
-    gitHubProject: "https://github.com/CharlesABJ/kasa",
-    linkProject: "https://charlesabj-kasa.netlify.app/",
+    gitHubProject: "https://github.com/CharlesABJ/mon-vieux-grimoire",
+    // linkProject: "https://charlesabj-kasa.netlify.app/",
   },
   {
     id: 3,
@@ -53,8 +53,8 @@ export const projectList = [
     ],
 
     technoName: ["Javascript", "SEO", "Accessibilité", "WebPerf"],
-    gitHubProject: "https://github.com/CharlesABJ/kasa",
-    linkProject: "https://charlesabj-kasa.netlify.app/",
+    gitHubProject: "https://github.com/CharlesABJ/nina-carducci",
+    linkProject: "https://charlesabj.github.io/nina-carducci",
   },
 
   {
@@ -75,7 +75,7 @@ export const projectList = [
       "Versionnement efficace avec Git et GitHub : J'ai utilisé Git et GitHub pour versionner mon projet tout au long de son développement, garantissant ainsi une gestion efficace des modifications et une collaboration transparente avec l'équipe de Booki.",
     ],
     technoName: ["HTML", "CSS", "Pixel perfect", "Figma"],
-    gitHubProject: "https://github.com/CharlesABJ/kasa",
-    linkProject: "https://charlesabj-kasa.netlify.app/",
+    gitHubProject: "https://github.com/CharlesABJ/Booki",
+    linkProject: "https://charlesabj.github.io/booki",
   },
 ];

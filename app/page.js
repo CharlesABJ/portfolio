@@ -29,9 +29,6 @@ function page() {
     if (typeof window !== "undefined") {
       const savedMode = localStorage.getItem("darkMode");
       return savedMode !== null ? JSON.parse(savedMode) : false;
-    } else {
-      // Gérer le cas où localStorage n'est pas disponible (par exemple, en mode serveur)
-      return false;
     }
   });
 
@@ -39,7 +36,6 @@ function page() {
     const newMode = !darkMode;
     setDarkMode(newMode);
     localStorage.setItem("darkMode", JSON.stringify(newMode));
-    //Rajouter transition
   };
 
   useEffect(() => {

@@ -3,30 +3,32 @@ export const skillsLogiList = [
     id: "4be9a35f",
     cardTitle: "Vscode",
     cardUrl: "../../assets/images/vscode.svg",
-    subtitle: "Extension, Débogage, ",
+    subtitle: "Extension, Débogage, Gestionnaire de terminal",
   },
   {
     id: "68da5e91",
     cardTitle: "Git",
     cardUrl: "../../assets/images/git.svg",
-    subtitle: "GitHub, Clonage de dépôts, Commit, Fusion de branches,",
+    subtitle:
+      "GitHub, Clonage de dépôts, Contrôle de version, Commits, Fusion de branches,",
   },
   {
     id: "f9c286d2",
     cardTitle: "Figma",
     cardUrl: "../../assets/images/figma.svg",
-    subtitle: "Figma",
+    subtitle: "Collaboration, Design UX, Maquettes",
   },
   {
     id: "8b076413",
     cardTitle: "NPM",
     cardUrl: "../../assets/images/npm.svg",
-    subtitle: "Gestion des dépendances",
+    subtitle: "Gestion des paquets et des dépendances",
   },
   {
     id: "273d1b7a",
     cardTitle: "Trello",
     cardUrl: "../../assets/images/trello.svg",
-    subtitle: "Gestion de projet",
+    subtitle:
+      "Gestion de projet, Tableaux, Listes et cartes, Suivi et Attribution des tâches",
   },
 ];

@@ -40,7 +40,7 @@ function Contact(props) {
               </li>
               <li>
                 <a
-                  href="tel:+41 754650320"
+                  href="tel:+41754650320"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -14,7 +14,8 @@
     background-color: var(--couleur-nav-active);
     color: var(--couleur-fond);
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 11px;
+    width: 70px;
     opacity: 0;
 }
 

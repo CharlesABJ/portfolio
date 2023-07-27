@@ -37,7 +37,7 @@ header nav {
 
 header nav ul {
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
     list-style: none;
     align-items: center;
 }
@@ -51,9 +51,14 @@ header nav ul li {
 
 header nav ul li.hidden {
     display: none;
+    cursor: pointer;
 }
 
-header nav ul li:hover {
+header nav ul li.off {
+    cursor: pointer;
+}
+
+header nav ul li span:hover {
     color: var(--couleur-nav-hover);
     transition: 0.3s all;
 }
@@ -91,12 +96,11 @@ header nav ul li svg:hover {
     transition: 0.3s;
 }
 
-
-header nav ul li.off svg:hover {
+header nav ul li span.active svg:hover {
     background: var(--couleur-fond2);
-    transform: scale(1.25);
-    transition: 0.3s;
+    transform: scale(1.05);
 }
+
 
 header nav ul li.off svg:active {
     animation: rotate 0.7s forwards;
@@ -124,6 +128,7 @@ header .up {
     box-shadow: 0 2px 4px var(--couleur-box-shadow);
     padding: 8px 10px;
     border-radius: 3px;
+    transition: 0.3s background-color;
 }
 
 header .up:hover svg path {
@@ -155,6 +160,11 @@ header .up svg path {
         width: 100%;
     }
 
+    header nav ul li {
+        margin-left: 0;
+        cursor: default;
+    }
+
     header nav ul .nav-responvsive {
         width: 100%;
         display: flex;
@@ -163,19 +173,34 @@ header .up svg path {
 
     header nav ul li .nav-off {
         display: none;
+
     }
 
     header nav ul li .nav-on {
         text-align: center;
         display: none;
-        padding-right: 51px;
-        border-right: 1px var(--couleur-hover) solid;
+    }
+
+    header nav ul li .nav-on {
+        position: relative;
     }
 
     header nav ul li .nav-on svg {
         padding: 5px;
         font-size: 5vw;
         transition: 0.3s all;
+        cursor: pointer;
+    }
+
+    header nav ul li .nav-on::after {
+        content: '';
+        height: 80%;
+        width: 1px;
+        background-color: var(--couleur-hover);
+        position: absolute;
+        top: 50%;
+        right: -100%;
+        transform: translate(100%, -50%);
     }
 
     header nav ul li:nth-child(5),
@@ -189,14 +214,13 @@ header .up svg path {
 }
 
 @media screen and (max-width:740px) {
-    header nav ul li .nav-on {
-        padding-right: 0;
-        border-right: none;
+
+    header nav ul li .nav-on::after {
+        display: none;
     }
 
-    header nav ul li .nav-on svg:hover {
-        background: var(--couleur-fond2);
-        padding: 3px;
-        transition: 0.3s all;
+    header nav ul li.hidden {
+        font-size: small;
     }
+
 }

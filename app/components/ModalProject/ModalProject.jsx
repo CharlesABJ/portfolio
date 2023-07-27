@@ -45,26 +45,6 @@ function ModalProject(props) {
                 {project.strongPoint.map((e, index) => (
                   <li key={index}>{e}</li>
                 ))}
-                {/* <li>
-                  Conception réactive : J'ai développé une interface utilisateur
-                  réactive en utilisant des techniques de conception adaptative,
-                  garantissant une expérience cohérente sur les ordinateurs de
-                  bureau, les tablettes et les smartphones.{" "}
-                </li>
-                <li>
-                  Performances optimisées : J'ai minutieusement optimisé les
-                  performances de l'application en utilisant des techniques de
-                  chargement progressif des images et en minimisant les demandes
-                  réseau.
-                </li>
-
-                <li>
-                  {" "}
-                  Animations CSS : J'ai implémenté des animations CSS pour
-                  rendre l'expérience utilisateur plus agréable et immersive,
-                  notamment lors des transitions entre les pages et lors de
-                  l'affichage des galeries d'images.
-                </li> */}
               </ul>
 
               <h4>Technologies utilisées</h4>
@@ -82,19 +62,22 @@ function ModalProject(props) {
                   Code
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
-                <a
-                  href={project.linkProject}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Voir le site
-                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                </a>
+                {project.linkProject ? (
+                  <a
+                    href={project.linkProject}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Voir le site
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                  </a>
+                ) : null}
               </div>
             </div>
           </div>
           <div className="pictures-of-project">
             <img src={project.pictures} alt={project.titleProject} />
+            <img src="../../assets/images/test.png" alt="test" />
           </div>
         </div>
       </div>
