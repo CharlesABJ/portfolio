@@ -24,6 +24,7 @@
     box-shadow: 0 2px 10px var(--couleur-box-shadow);
     cursor: pointer;
     transition: 0.3s all;
+    user-select: none;
 }
 
 .projects .projects-zone .select-project-zone li:hover {

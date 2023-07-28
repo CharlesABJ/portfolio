@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+body,
+header,
+section {
+    transition: background-color .3s
+}
+
+:root {
+    --couleur-fond: #fff;
+    --couleur-fond2: #f9f9f9;
+    --couleur-fond-header: #fff;
+    --couleur-texte: #2d2e32;
+    --couleur-texte-hover: #2c2c2cc5;
+    --couleur-span: #0E6899;
+    --couleur-nav: #6c6c6c;
+    --couleur-up-button: #fff;
+    --couleur-nav-hover: #606060;
+    --couleur-nav-active: #4d4d4d;
+    --couleur-hover: #d1d1d1;
+    --couleur-image-hover: #ffffff69;
+    --couleur-h3: #4d4d4d;
+    --couleur-box-shadow: #0000001a;
+    --couleur-border: #2d2e32;
+    --couleur-p: #2d2e32db;
+    --couleur-button-leave-modal: #00000080
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: var(--couleur-texte)
+}
+
+body,
+header {
+    margin: 0 auto;
+    max-width: 1500px;
+    min-width: 340px;
+    background-color: var(--couleur-fond2)
+}
+
+body.modal-open {
+    overflow: hidden
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px var(--couleur-fond) inset;
+    -webkit-text-fill-color: var(--couleur-texte)
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: poppins, sans-serif
+}
+
+h3 svg path,
+h4 svg path {
+    color: var(--couleur-h3)
+}
+
+section {
+    padding: 130px 65px 80px;
+    background-color: var(--couleur-fond)
+}
+
+section h2,
+section>p {
+    text-align: center;
+    margin-bottom: 7px
+}
+
+section h2 {
+    font-size: 3vw
+}
+
+section>p {
+    color: var(--couleur-nav);
+    font-size: 1.3vw
+}
+
+span {
+    color: var(--couleur-span)
+}
+
+h4,
+li,
+p {
+    color: var(--couleur-p)
+}
+
+@media screen and (max-width:930px) {
+    section h2 {
+        font-size: 4.5vw
+    }
+
+    section>p {
+        color: var(--couleur-nav);
+        margin-bottom: 10vw;
+        font-size: 3vw
+    }
+}
+
+@media screen and (max-width:740px) {
+    section {
+        padding: 100px 25px 80px;
+    }
+}

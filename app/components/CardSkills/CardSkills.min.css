@@ -1,1 +1,98 @@
-.card-skills{position:relative;cursor:pointer}.card-skills::after{content:attr(data-info);position:absolute;bottom:30px;text-align:center;left:50%;transform:translateX(-50%);padding:5px 15px;background-color:var(--couleur-nav-active);color:var(--couleur-fond);border-radius:4px;font-size:11px;width:80px;opacity:0}.card-skills:active::after{opacity:1;transition:.3s}.card-skills div{height:110px;border-radius:40%;cursor:pointer;display:flex;align-items:center;justify-content:center}.card-skills div img{width:50px;animation:3s infinite technos-animation;transition:transform .5s ease-in-out}.card-skills h4{margin-top:20px;text-align:center}.card-skills:hover img{animation:1s bounce}@keyframes technos-animation{0%{transform:scale(1)}50%{transform:scale(1.03)}}@keyframes bounce{0%,100%,20%,50%,80%{transform:translateY(0)}40%{transform:translateY(-20px)}60%{transform:translateY(-10px)}}@media screen and (max-width:740px){.card-skills h4{font-size:3vw}.card-skills div{height:70px}.card-skills div img{width:40px}}
+.card-skills {
+    position: relative;
+    cursor: pointer;
+}
+
+.card-skills::after {
+    content: attr(data-info);
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 15px;
+    background-color: var(--couleur-nav-active);
+    color: var(--couleur-fond);
+    border-radius: 4px;
+    font-size: 11px;
+    width: 80px;
+    opacity: 0;
+}
+
+.card-skills:active::after {
+    opacity: 1;
+    transition: 0.3s all;
+}
+
+.card-skills div {
+    height: 110px;
+    border-radius: 40%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-skills div img {
+    width: 50px;
+}
+
+.card-skills h4 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card-skills div img {
+    animation: technos-animation 3s infinite;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-skills:hover img {
+    animation: bounce 1s;
+}
+
+@keyframes technos-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+
+@media screen and (max-width:740px) {
+    .card-skills h4 {
+        font-size: 3vw;
+        user-select: none;
+    }
+
+    .card-skills div {
+        height: 70px;
+    }
+
+    .card-skills div img {
+        width: 40px;
+    }
+
+}

@@ -1,1 +1,235 @@
-.home .presentation-profile .presentation ul,.home .technos{display:flex;list-style:none}.home{background-color:var(--couleur-fond2);padding:130px 65px 265px}.home .presentation-profile{display:flex;align-items:center}.home .presentation-profile .presentation{width:60%}.home .presentation-profile .presentation h1{width:100%;font-family:Poppins,Roboto,sans-serif;font-size:4.4vw;font-weight:700;margin-bottom:10px;line-height:1.2}.home .presentation-profile .presentation h1 span{margin-left:10px}.home .presentation-profile .presentation p{font-size:1.45vw;margin-bottom:10px}.home .presentation-profile .presentation ul li{margin-right:2%}.home .presentation-profile .presentation ul li a svg{font-size:2.5vw;transition:.2s ease-in-out}.home .presentation-profile .presentation ul li a svg:hover{transform:scale(1.08)}.home .presentation-profile .presentation ul li a svg path{transition:.3s}.home .presentation-profile .presentation ul li a svg:hover path{color:var(--couleur-nav-active);transition:.3s}.home .presentation-profile .profile{width:40%;display:flex;align-items:center;justify-content:center}.home .presentation-profile .profile img{width:100%}.home .technos{align-items:center;margin:3vw 0}.home .technos p{font-weight:500;font-size:1.2vw;line-height:1;padding-right:10px;margin:0 40px 0 0;border-right:var(--couleur-nav) 2px solid}.home .technos .technos-icons{display:flex;flex-wrap:wrap;list-style:none;justify-content:center}.home .technos li{margin:0 10px}.home .technos li img{width:4vw;padding:5px;background:#f9f9f9;border-radius:50%;box-shadow:0 0 10px var(--couleur-box-shadow);cursor:pointer;transition:.3s;animation:3s infinite technos-animation}.home .technos li img:hover{background:var(--couleur-image-hover);box-shadow:0 0 15px #00000030;transform:scale(1.01)}@keyframes technos-animation{0%{transform:scale(1)}50%{transform:scale(1.06)}}@media screen and (max-width:930px){.home{padding:130px 65px 80px}.home .presentation-profile{flex-direction:column-reverse;width:100%;align-items:center;justify-content:center;text-align:center}.home .presentation-profile .presentation{width:100%}.home .presentation-profile .profile{width:70%}.home .presentation-profile .presentation h1{font-size:6.4vw;margin-top:20px}.home .presentation-profile .presentation p{font-size:2.5vw}.home .presentation-profile .presentation ul{justify-content:center;margin:30px 20px 20px}.home .presentation-profile .presentation ul li a svg{font-size:3.5vw;margin-inline:2px}.home .technos{flex-direction:column}.home .technos p{text-align:center;border-right:none;border-bottom:2px solid #6c6c6c;padding-right:0;padding-bottom:7px;margin:0;font-size:2vw}.home .technos .technos-icons{margin:30px}.home .technos .technos-icons li{margin:10px}.home .technos .technos-icons li img{width:50px}}@media screen and (max-width:740px){.home .presentation-profile .presentation h1{font-size:8.4vw}.home .presentation-profile .presentation p,.home .technos p{font-size:3.5vw}.home .presentation-profile .presentation ul li a svg{font-size:5vw}.home .technos .technos-icons li img{width:40px}}
+.home {
+    background-color: var(--couleur-fond2);
+    padding: 130px 65px 265px;
+}
+
+.home .presentation-profile {
+    display: flex;
+    align-items: center;
+}
+
+.home .presentation-profile .presentation {
+    width: 60%;
+}
+
+.home .presentation-profile .presentation h1 {
+    width: 100%;
+    font-family: Poppins, 'Roboto', sans-serif;
+    font-size: 4.4vw;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.home .presentation-profile .presentation h1 span {
+    margin-left: 10px;
+}
+
+.home .presentation-profile .presentation p {
+    font-size: 1.45vw;
+    margin-bottom: 10px;
+}
+
+.home .presentation-profile .presentation ul {
+    list-style: none;
+    display: flex;
+}
+
+.home .presentation-profile .presentation ul li {
+    margin-inline: 1%;
+}
+
+.home .presentation-profile .presentation ul li a svg {
+    font-size: 2.5vw;
+    transition: 0.2s all ease-in-out;
+}
+
+.home .presentation-profile .presentation ul li a svg:hover {
+    transform: scale(1.08);
+}
+
+.home .presentation-profile .presentation ul li a svg path {
+    transition: 0.3s all;
+}
+
+.home .presentation-profile .presentation ul li a svg:hover path {
+    color: var(--couleur-nav-active);
+    transition: 0.3s all;
+}
+
+.home .presentation-profile .profile {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .presentation-profile .profile img {
+    width: 100%;
+
+}
+
+.home .technos {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 3vw 0;
+}
+
+.home .technos p {
+    font-weight: 500;
+    font-size: 1.2vw;
+    line-height: 1;
+    padding-right: 10px;
+    margin: 0 40px 0 0;
+    border-right: var(--couleur-nav) 2px solid;
+}
+
+.home .technos .technos-icons {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+
+.home .technos li {
+    margin: 0 10px;
+}
+
+.home .technos li img {
+    width: 4vw;
+    padding: 5px;
+    background: #f9f9f9;
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--couleur-box-shadow);
+    cursor: pointer;
+    transition: 0.3s all;
+    animation: technos-animation 3s infinite;
+}
+
+.home .technos li img:hover {
+    background: var(--couleur-image-hover);
+    box-shadow: 0 0 15px #00000030;
+    transform: scale(1.01);
+}
+
+
+@keyframes technos-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.06);
+    }
+}
+
+
+
+@media screen and (max-width:930px) {
+    .home {
+        padding: 130px 65px 80px;
+    }
+
+    .home .presentation-profile {
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .presentation-profile .presentation {
+        width: 100%;
+    }
+
+    .home .presentation-profile .presentation ul li {
+        margin-inline: 2%;
+    }
+
+    .home .presentation-profile .profile {
+        width: 70%;
+    }
+
+
+    .home .presentation-profile .presentation h1 {
+        font-size: 6.4vw;
+        margin-top: 20px;
+    }
+
+    .home .presentation-profile .presentation p {
+        font-size: 2.5vw;
+    }
+
+    .home .presentation-profile .presentation ul {
+        justify-content: center;
+        margin: 30px 20px 20px;
+
+    }
+
+    .home .presentation-profile .presentation ul li a svg {
+        font-size: 3.5vw;
+        margin-inline: 2px;
+    }
+
+    .home .technos {
+        flex-direction: column;
+    }
+
+    .home .technos p {
+        text-align: center;
+        border-right: none;
+        border-bottom: #6c6c6c 2px solid;
+        padding-right: 0;
+        padding-bottom: 7px;
+        margin: 0;
+        font-size: 2vw;
+    }
+
+    .home .technos .technos-icons {
+        margin: 30px;
+    }
+
+    .home .technos .technos-icons li {
+        margin: 10px;
+    }
+
+    .home .technos .technos-icons li img {
+        width: 50px;
+    }
+}
+
+
+
+@media screen and (max-width:740px) {
+    .home {
+        padding: 130px 55px 80px;
+    }
+
+    .home .presentation-profile .presentation h1 {
+        font-size: 8.4vw;
+
+    }
+
+    .home .presentation-profile .presentation p {
+        font-size: 3.5vw;
+    }
+
+    .home .technos p {
+        font-size: 3.5vw;
+    }
+
+    .home .presentation-profile .presentation ul li a svg {
+        font-size: 5.5vw;
+    }
+
+    .home .technos .technos-icons {
+        margin: 20px;
+    }
+
+    .home .technos .technos-icons li img {
+        width: 40px;
+    }
+
+}

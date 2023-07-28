@@ -84,6 +84,7 @@
 @media screen and (max-width:740px) {
     .card-skills h4 {
         font-size: 3vw;
+        user-select: none;
     }
 
     .card-skills div {

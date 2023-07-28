@@ -58,8 +58,13 @@ header nav ul li.off {
     cursor: pointer;
 }
 
+header nav ul li span {
+    color: var(--couleur-nav-active);
+    transition: 0.3s all;
+}
+
 header nav ul li span:hover {
-    color: var(--couleur-nav-hover);
+    color: var(--couleur-span);
     transition: 0.3s all;
 }
 
@@ -75,14 +80,6 @@ header nav ul .nav-responvsive {
     align-items: center;
 }
 
-header nav ul li span {
-    color: var(--couleur-nav);
-}
-
-header nav ul li span.active {
-    color: var(--couleur-nav-active);
-    font-weight: 500;
-}
 
 header nav ul li svg {
     padding: 5px 7px;
@@ -93,6 +90,13 @@ header nav ul li svg {
 header nav ul li svg:hover {
     background: var(--couleur-fond2);
     transform: scale(1.05);
+    transition: 0.3s;
+}
+header nav ul li svg path {
+    transition: 0.3s;
+}
+header nav ul li svg:hover path {
+    color: var(--couleur-span);
     transition: 0.3s;
 }
 

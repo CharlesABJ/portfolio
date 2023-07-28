@@ -13,7 +13,7 @@ const PortfolioPage = () => {
                 "@context": "https://schema.org",
                 "@type": "Person",
                 "name": "Charles ABJ",
-                "url": "URL_du_portfolio",
+                "url": "https://charlesabj.netlify.app/",
                 "sameAs": [
                   "https://www.linkedin.com/in/charlesabj-78753b182/",
                   "https://github.com/CharlesABJ"

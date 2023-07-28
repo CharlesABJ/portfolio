@@ -7,7 +7,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 // since it's already imported above
 config.autoAddCss = false;
 import React, { useEffect, useRef, useState } from "react";
-import "./page.css";
+import "./page.min.css";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Skills from "./components/Skills/Skills";
