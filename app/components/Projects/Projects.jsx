@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import "./Projects.css";
+import "./Projects.min.css";
 import CardProjects from "../Card-projects/CardProjects";
 import ModalProject from "../ModalProject/ModalProject";
 import { projectList } from "../../datas/projectList";
@@ -33,6 +33,8 @@ function Projects(props) {
   const blockScroll = () => {
     if (isModalOpen) {
       document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
     }
   };
   useEffect(() => {

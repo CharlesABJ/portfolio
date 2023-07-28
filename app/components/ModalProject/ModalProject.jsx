@@ -1,5 +1,5 @@
 import React from "react";
-import "./ModalProject.css";
+import "./ModalProject.min.css";
 import TechnoModal from "../TechnoModal/TechnoModal";
 import { projectList } from "../../datas/projectList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

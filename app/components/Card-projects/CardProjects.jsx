@@ -1,7 +1,7 @@
 // CardProjects.js
 
 import React from "react";
-import "./CardProjects.css";
+import "./CardProjects.min.css";
 import TechnoModal from "../TechnoModal/TechnoModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "./About.css";
+import "./About.min.css";
 function About(props) {
   const [seeMore, setSeeMore] = useState("Voir plus");
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Skills.css";
+import "./Skills.min.css";
 import CardSkills from "../CardSkills/CardSkills";
 import { skillsLanguageList } from "../../datas/skillsLanguageList";
 import { skillsLogiList } from "../../datas/skillsLogiList";

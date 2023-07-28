@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "./Footer.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookMessenger,

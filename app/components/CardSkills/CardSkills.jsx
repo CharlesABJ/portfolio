@@ -1,5 +1,5 @@
 import React from "react";
-import "./CardSkills.css";
+import "./CardSkills.min.css";
 
 function CardSkills(props) {
   return (

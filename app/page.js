@@ -25,12 +25,14 @@ function page() {
   const projectsSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
 
-  const [darkMode, setDarkMode] = useState(() => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
     if (typeof window !== "undefined") {
       const savedMode = localStorage.getItem("darkMode");
-      return savedMode !== null ? JSON.parse(savedMode) : false;
+      setDarkMode(savedMode !== null ? JSON.parse(savedMode) : false);
     }
-  });
+  }, []);
 
   const handleClickChangeMode = () => {
     const newMode = !darkMode;
@@ -92,9 +94,6 @@ function page() {
         }
         logoClassName={darkMode ? "dark-mode" : "light-mode"}
         handleClickChangeMode={() => handleClickChangeMode()}
-        titleChangeMode={
-          darkMode ? "Passer au Light Mode" : "Passer au Dark Mode"
-        }
         iconChangeMode={darkMode ? faSun : faMoon}
       />
       <Home

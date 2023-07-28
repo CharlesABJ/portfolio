@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import "./Header.css";
+import "./Header.min.css";
 // Import the FontAwesomeIcon component
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -167,19 +167,21 @@ function Header(props) {
                   {contact}
                 </span>
               </li>
-              <li className="off" onClick={props.handleClickChangeMode}>
-                <FontAwesomeIcon
-                  title={props.titleChangeMode}
-                  icon={props.iconChangeMode}
-                />
+              <li
+                title={props.titleChangeMode}
+                className="off"
+                onClick={props.handleClickChangeMode}
+              >
+                <FontAwesomeIcon icon={props.iconChangeMode} />
               </li>
             </ul>
           </li>
-          <li className="hidden" onClick={() => handleClickOpenNav()}>
-            <FontAwesomeIcon
-              title={openNav ? "Fermer" : "Ouvrir"}
-              icon={openNav ? faXmark : faBarsStaggered}
-            />
+          <li
+            title={openNav ? "Fermer" : "Ouvrir"}
+            className="hidden"
+            onClick={() => handleClickOpenNav()}
+          >
+            <FontAwesomeIcon icon={openNav ? faXmark : faBarsStaggered} />
           </li>
         </ul>
       </nav>
