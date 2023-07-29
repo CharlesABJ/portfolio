@@ -5,6 +5,7 @@ import { skillsLanguageList } from "../../datas/skillsLanguageList";
 import { skillsLogiList } from "../../datas/skillsLogiList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faToolbox } from "@fortawesome/free-solid-svg-icons";
+
 function Skills(props) {
   return (
     <section className="skills" ref={props.sectionRef}>
@@ -17,12 +18,13 @@ function Skills(props) {
             <FontAwesomeIcon icon={faCode} /> Mes langages
           </h3>
           <div className="languages-icons">
-            {skillsLanguageList.map((e) => (
+            {skillsLanguageList.map((e, index) => (
               <CardSkills
                 key={e.id}
                 cardTitle={e.cardTitle}
                 cardUrl={e.cardUrl}
                 dataInfo={e.subtitle}
+                isActive={index === 0} // Le premier CardSkills est actif par défaut
               />
             ))}
           </div>
@@ -35,11 +37,10 @@ function Skills(props) {
           <div className="logi-icons">
             {skillsLogiList.map((e) => (
               <CardSkills
-                className="tooltip"
-                dataInfo={e.subtitle}
                 key={e.id}
                 cardTitle={e.cardTitle}
                 cardUrl={e.cardUrl}
+                dataInfo={e.subtitle}
               />
             ))}
           </div>

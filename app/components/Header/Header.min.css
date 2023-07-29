@@ -3,7 +3,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 0;
+    bottom: calc(100% - 80px);
     width: 100%;
     background: var(--couleur-fond-header);
     box-shadow: 0 2px 4px var(--couleur-box-shadow);
@@ -150,7 +150,7 @@ header .up svg path {
 
 @media screen and (max-width: 930px) {
     header {
-        top: 93vh;
+        bottom: 7%;
         left: 50%;
         transform: translate(-50%, -93%);
         bottom: 10px;

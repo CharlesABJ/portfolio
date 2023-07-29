@@ -162,7 +162,7 @@ function Header(props) {
               </li>
 
               <li onClick={() => scrollToSection(props.contactSectionRef)}>
-                <span className="nav-off">Contacter</span>
+                <span className="nav-off">Me contacter</span>
                 <span title="Contacter" className="nav-on">
                   {contact}
                 </span>

@@ -77,7 +77,6 @@
 
 .card-projects .techno-use li {
     margin-inline: 5px;
-    cursor: pointer
 }
 
 .card-projects .techno-use li span:hover {
@@ -118,5 +117,9 @@
 
     .card-projects p {
         font-size: 3.5vw
+    }
+
+    .card-projects .techno-use li span {
+        font-size: 1.8vw;
     }
 }

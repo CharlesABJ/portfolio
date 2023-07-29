@@ -15,6 +15,11 @@ section {
     --couleur-texte-hover: #2c2c2cc5;
     --couleur-span: #0E6899;
     --couleur-nav: #6c6c6c;
+    --couleur-background-button: #e6e6e6c2;
+    --couleur-background-button-active: #fff;
+
+
+
     --couleur-up-button: #fff;
     --couleur-nav-hover: #606060;
     --couleur-nav-active: #4d4d4d;
@@ -39,8 +44,8 @@ body,
 header {
     margin: 0 auto;
     max-width: 1500px;
-    min-width: 340px;
-    background-color: var(--couleur-fond2)
+    min-width: 320px;
+    background-color: var(--couleur-fond)
 }
 
 body.modal-open {
@@ -109,5 +114,13 @@ p {
 @media screen and (max-width:740px) {
     section {
         padding: 100px 25px 80px;
+    }
+
+    section h2 {
+        font-size: 6.5vw;
+    }
+
+    section>p {
+        font-size: 3.5vw;
     }
 }

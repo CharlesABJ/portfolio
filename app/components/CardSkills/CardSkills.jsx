@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CardSkills.min.css";
 
 function CardSkills(props) {
+  const [isActiveSkills, setIsActiveSkills] = useState(props.isActive);
+
+  const activeSkills = () => {
+    setIsActiveSkills(!isActiveSkills);
+  };
+
   return (
     <div
+      id={isActiveSkills ? "active-skills" : null}
+      onClick={() => activeSkills()}
       data-info={props.dataInfo}
       title={props.subTitle}
-      className={`card-skills ${props.className}`}
+      className="card-skills"
     >
       <div>
         <img src={props.cardUrl} alt={props.cardTitle} />

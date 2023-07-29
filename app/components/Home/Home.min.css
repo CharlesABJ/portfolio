@@ -204,7 +204,7 @@
 
 @media screen and (max-width:740px) {
     .home {
-        padding: 130px 55px 80px;
+        padding: 130px 50px 80px;
     }
 
     .home .presentation-profile .presentation h1 {
@@ -217,11 +217,11 @@
     }
 
     .home .technos p {
-        font-size: 3.5vw;
+        font-size: 3.6vw;
     }
 
     .home .presentation-profile .presentation ul li a svg {
-        font-size: 5.5vw;
+        font-size: 6vw;
     }
 
     .home .technos .technos-icons {

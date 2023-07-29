@@ -5,3 +5,10 @@
     font-weight: 300;
     font-size: 0.9vw;
 }
+
+@media screen and (max-width:740px) {
+    .techno-modal {
+        padding: 4px 12px;
+        border: 0.1px solid var(--couleur-span);
+    }
+}

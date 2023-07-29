@@ -19,7 +19,12 @@
     opacity: 0;
 }
 
-.card-skills:active::after {
+/* .card-skills:active::after {
+    opacity: 1;
+    transition: 0.3s all;
+} */
+
+.card-skills#active-skills::after {
     opacity: 1;
     transition: 0.3s all;
 }

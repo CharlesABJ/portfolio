@@ -59,6 +59,8 @@ function page() {
       root.setProperty("--couleur-box-shadow", "#00000035");
       root.setProperty("--couleur-border", "#4e5255");
       root.setProperty("--couleur-p", "#d0d0d0db");
+      root.setProperty("--couleur-background-button", "#1d1d1d");
+      root.setProperty("--couleur-background-button-active", "#2b2b2bce");
     } else {
       root.setProperty("--couleur-fond", "#fff");
       root.setProperty("--couleur-fond2", "#f9f9f9");
@@ -76,6 +78,8 @@ function page() {
       root.setProperty("--couleur-box-shadow", "#0000001a");
       root.setProperty("--couleur-border", "#2d2e32");
       root.setProperty("--couleur-p", "#2d2e32db");
+      root.setProperty("--couleur-background-button", "#e6e6e6c2");
+      root.setProperty("--couleur-background-button-active", "#fff");
     }
   }, [darkMode]);
 

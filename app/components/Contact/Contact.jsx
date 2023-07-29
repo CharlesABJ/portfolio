@@ -11,7 +11,7 @@ function Contact(props) {
   return (
     <section className="contact" ref={props.sectionRef}>
       <h2>Contactez-Moi</h2>
-      <p>Envoyez moi un message</p>
+      <p>Envoyez-moi un message</p>
       <div className="contact-zone">
         <ul className="classic-contact">
           <li>
