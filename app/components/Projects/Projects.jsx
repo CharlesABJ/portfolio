@@ -8,7 +8,7 @@ import { projectList } from "../../datas/projectList";
 function Projects(props) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(null);
-  const [filteredProjectId, setFilteredProjectId] = useState(null);
+  const [filteredProjectId, setFilteredProjectId] = useState(1);
 
   const chooseOneProject = (projectId) => {
     setFilteredProjectId(projectId);
@@ -29,6 +29,11 @@ function Projects(props) {
       setFilteredProjectId(null);
     }
   };
+  const handleResize2 = (e) => {
+    if (e.matches) {
+      setFilteredProjectId(1);
+    }
+  };
 
   const blockScroll = () => {
     if (isModalOpen) {
@@ -44,8 +49,17 @@ function Projects(props) {
   useEffect(() => {
     const mediaQuery = window.matchMedia("(min-width: 930px)");
     mediaQuery.addEventListener("change", handleResize);
+
     return () => {
       mediaQuery.removeEventListener("change", handleResize);
+    };
+  }, [filteredProjectId]);
+
+  useEffect(() => {
+    const mediaQuery2 = window.matchMedia("(max-width: 930px)");
+    mediaQuery2.addEventListener("change", handleResize2);
+    return () => {
+      mediaQuery2.removeEventListener("change", handleResize);
     };
   }, [filteredProjectId]);
 
@@ -70,7 +84,7 @@ function Projects(props) {
             ))}
         </div>
         <ul className="select-project-zone">
-          {projectList.map((project) => (
+          {projectList.map((project, index) => (
             <li
               className={filteredProjectId === project.id ? " active" : ""}
               onClick={() => chooseOneProject(project.id)}

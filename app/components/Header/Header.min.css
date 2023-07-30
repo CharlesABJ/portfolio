@@ -150,10 +150,9 @@ header .up svg path {
 
 @media screen and (max-width: 930px) {
     header {
-        bottom: 7%;
         left: 50%;
         transform: translate(-50%, -93%);
-        bottom: 10px;
+        bottom: 5px;
         width: 90%;
         height: 12vw;
         padding-inline: 35px;
@@ -222,7 +221,9 @@ header .up svg path {
 @media screen and (max-width:740px) {
     header {
         height: 14vw;
+        padding-inline: 25px;
     }
+
 
     header nav ul li .nav-on::after {
         display: none;

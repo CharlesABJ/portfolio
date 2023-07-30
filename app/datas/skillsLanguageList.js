@@ -16,7 +16,7 @@ export const skillsLanguageList = [
     id: "f1a3907b",
     cardTitle: "JavaScript",
     subtitle:
-      "Manipulation du DOM, Programmation asynchrone, appels aux API, Gestion des données utilisateurs via des formulaires, Gestion des événements utilisateurs",
+      "Manipulation du DOM, Programmation asynchrone, appels aux API, Gestion des données utilisateurs via des formulaires",
     cardUrl: "../../assets/images/javascript.svg",
   },
   {

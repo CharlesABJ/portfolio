@@ -204,24 +204,24 @@
 
 @media screen and (max-width:740px) {
     .home {
-        padding: 130px 50px 80px;
+        padding: 130px 32px 80px;
     }
 
     .home .presentation-profile .presentation h1 {
-        font-size: 8.4vw;
+        font-size: 9.5vw;
 
     }
 
     .home .presentation-profile .presentation p {
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
 
     .home .technos p {
-        font-size: 3.6vw;
+        font-size: 3.8vw;
     }
 
     .home .presentation-profile .presentation ul li a svg {
-        font-size: 6vw;
+        font-size: 6.5vw;
     }
 
     .home .technos .technos-icons {
@@ -229,7 +229,7 @@
     }
 
     .home .technos .technos-icons li img {
-        width: 40px;
+        width: 13vw;
     }
 
 }
