@@ -27,6 +27,7 @@ function Form(props) {
           required
           type="text"
           id="email"
+          name="email"
           placeholder="Écrivez votre email"
         />
       </div>
@@ -35,6 +36,7 @@ function Form(props) {
         <textarea
           required
           id="project"
+          name="project"
           placeholder="Présentez votre projet"
         ></textarea>
       </div>
