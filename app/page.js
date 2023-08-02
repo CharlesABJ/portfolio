@@ -88,7 +88,7 @@ function page() {
   useEffect(() => {
     // Initialisez AOS
     AOS.init({
-      offset: 200, // Décalage (en pixels) depuis le bas de la fenêtre pour déclencher l'animation
+      offset: 0, // Décalage (en pixels) depuis le bas de la fenêtre pour déclencher l'animation
       duration: 800, // Durée de l'animation
       easing: "ease-in-out",
       delay: 0, // Délai avant le démarrage de l'animation (en millisecondes)
