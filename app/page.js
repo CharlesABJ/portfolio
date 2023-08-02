@@ -7,6 +7,9 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 // since it's already imported above
 config.autoAddCss = false;
 import React, { useEffect, useRef, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Assurez-vous d'importer le fichier CSS de AOS
+
 import "./page.min.css";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
@@ -82,7 +85,16 @@ function page() {
       root.setProperty("--couleur-background-button-active", "#fff");
     }
   }, [darkMode]);
-
+  useEffect(() => {
+    // Initialisez AOS
+    AOS.init({
+      offset: 200, // Décalage (en pixels) depuis le bas de la fenêtre pour déclencher l'animation
+      duration: 800, // Durée de l'animation
+      easing: "ease-in-out",
+      delay: 0, // Délai avant le démarrage de l'animation (en millisecondes)
+      once: true, // Appliquer l'animation une seule fois
+    });
+  }, []);
   return (
     <div>
       <Header
@@ -101,6 +113,7 @@ function page() {
         iconChangeMode={darkMode ? faSun : faMoon}
       />
       <Home
+        dataAos="fade-up"
         sectionRef={homeSectionRef}
         profilSrc={
           darkMode
@@ -108,15 +121,16 @@ function page() {
             : "../../assets/images/logo-light.webp"
         }
       />
-      <About sectionRef={aboutSectionRef} />
+      <About dataAos="fade-up" sectionRef={aboutSectionRef} />
       <Projects
+        dataAos="fade-up"
         sectionRef={projectsSectionRef}
         overlayClassName={darkMode ? "dark-mode" : null}
         darkMode={darkMode}
       />
-      <Skills sectionRef={skillsSectionRef} />
+      <Skills dataAos="fade-up" sectionRef={skillsSectionRef} />
       <Recommandations />
-      <Contact sectionRef={contactSectionRef} />
+      <Contact dataAos="fade-up" sectionRef={contactSectionRef} />
       <Footer
         aboutSectionRef={aboutSectionRef}
         skillsSectionRef={skillsSectionRef}

@@ -21,7 +21,7 @@ function About(props) {
   };
 
   return (
-    <section className="about" ref={props.sectionRef}>
+    <section data-aos={props.dataAos} className="about" ref={props.sectionRef}>
       <h2>À Propos de moi</h2>
       <p>Qui suis-je exactement ?</p>
       <div className="about-zone">

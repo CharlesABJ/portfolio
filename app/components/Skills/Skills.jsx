@@ -8,7 +8,7 @@ import { faCode, faToolbox } from "@fortawesome/free-solid-svg-icons";
 
 function Skills(props) {
   return (
-    <section className="skills" ref={props.sectionRef}>
+    <section data-aos={props.dataAos} className="skills" ref={props.sectionRef}>
       <h2>Mes Compétences</h2>
       <p>Mes principales compétences</p>
 

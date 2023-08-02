@@ -64,7 +64,11 @@ function Projects(props) {
   }, [filteredProjectId]);
 
   return (
-    <section className="projects" ref={props.sectionRef}>
+    <section
+      data-aos={props.dataAos}
+      className="projects"
+      ref={props.sectionRef}
+    >
       <h2>Mon Portfolio</h2>
       <p>Un aperçu de mes projets</p>
       <div className="projects-zone">
