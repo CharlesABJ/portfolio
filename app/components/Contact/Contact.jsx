@@ -1,11 +1,8 @@
 import React from "react";
 import "./Contact.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowRight,
-  faComment,
-  faPaperPlane,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faComment } from "@fortawesome/free-solid-svg-icons";
+import Form from "../Form/Form";
 
 function Contact(props) {
   return (
@@ -76,50 +73,7 @@ function Contact(props) {
             </ul>
           </li>
         </ul>
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          action="/"
-          className="project-contact"
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <h3>
-            <FontAwesomeIcon icon={faPaperPlane} />
-            Parlez moi de votre projet{" "}
-          </h3>
-          <div>
-            <label htmlFor="name">Nom</label>
-            <input
-              required
-              type="text"
-              id="name"
-              placeholder="Écrivez votre nom"
-            />
-          </div>
-          <div>
-            <label htmlFor="email">Email</label>
-            <input
-              required
-              type="text"
-              id="email"
-              placeholder="Écrivez votre email"
-            />
-          </div>
-          <div>
-            <label htmlFor="project">Projet</label>
-            <textarea
-              required
-              id="project"
-              placeholder="Présentez votre projet"
-            ></textarea>
-          </div>
-
-          <button className="submit" type="submit">
-            Envoyer
-            <FontAwesomeIcon icon={faArrowRight} />
-          </button>
-        </form>
+        <Form />
       </div>
     </section>
   );

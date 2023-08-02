@@ -69,19 +69,19 @@ function Projects(props) {
       <p>Un aperçu de mes projets</p>
       <div className="projects-zone">
         <div className="cards-projects-zone">
-          {projectList
-            .filter(
-              (project) =>
-                filteredProjectId === null || project.id === filteredProjectId
-            )
-            .map((project, index) => (
-              <CardProjects
-                onClick={() => handleClickOpenModal(index)}
-                key={index}
-                overlayClassName={props.overlayClassName}
-                {...project}
-              />
-            ))}
+          {projectList.map((project, index) => (
+            <CardProjects
+              onClick={() => handleClickOpenModal(index)}
+              key={index}
+              projectClassName={
+                filteredProjectId === project.id ? "is-active" : ""
+              }
+              imageSrc={project.imageSrc}
+              titleProject={project.titleProject}
+              missionProjectResume={project.missionProjectResume}
+              technoName={project.technoName}
+            />
+          ))}
         </div>
         <ul className="select-project-zone">
           {projectList.map((project, index) => (
@@ -89,7 +89,7 @@ function Projects(props) {
               className={filteredProjectId === project.id ? " active" : ""}
               onClick={() => chooseOneProject(project.id)}
               data-id={project.id}
-              title={`projet n° ${project.id}`}
+              title={`projet n° ${project.id} - ${project.titleProject}`}
               key={project.id}
             >
               {project.id}
@@ -102,7 +102,9 @@ function Projects(props) {
           style={{ display: "block" }}
           projectIndex={selectedProjectIndex}
           isOpen={isModalOpen}
+          overlayClassName={props.overlayClassName}
           onClose={handleCloseModal}
+          darkMode={props.darkMode}
         />
       )}
     </section>

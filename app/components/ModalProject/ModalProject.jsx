@@ -13,6 +13,9 @@ function ModalProject(props) {
   // Récupérer le projet spécifique de projectList en utilisant projectIndex
   const project = projectList[props.projectIndex];
 
+  const lightHouseSrc = props.darkMode
+    ? project.lightHouseSrcDark
+    : project.lightHouseSrc;
   return (
     <div style={props.style} className={props.className || "modal-container"}>
       <div onClick={props.onClose} className="overlay trigger"></div>
@@ -77,7 +80,7 @@ function ModalProject(props) {
           </div>
           <div className="pictures-of-project">
             <img src={project.pictures} alt={project.titleProject} />
-            <img src="../../assets/images/test.png" alt="test" />
+            <img src={lightHouseSrc} alt={project.titleProject} />
           </div>
         </div>
       </div>

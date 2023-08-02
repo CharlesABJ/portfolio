@@ -112,6 +112,7 @@ function page() {
       <Projects
         sectionRef={projectsSectionRef}
         overlayClassName={darkMode ? "dark-mode" : null}
+        darkMode={darkMode}
       />
       <Skills sectionRef={skillsSectionRef} />
       <Recommandations />

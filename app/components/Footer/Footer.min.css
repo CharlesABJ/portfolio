@@ -50,7 +50,12 @@ footer span {
     display: inline-block;
     color: var(--couleur-nav);
     margin-top: 35px;
-    font-size: small
+    font-size: small;
+}
+
+footer span a {
+    color: var(--couleur-nav);
+    text-decoration: none;
 }
 
 @media screen and (max-width:930px) {

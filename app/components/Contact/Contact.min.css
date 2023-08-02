@@ -54,69 +54,6 @@
     text-decoration: underline
 }
 
-.contact .contact-zone .project-contact {
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-    width: 30%
-}
-
-.contact .contact-zone .project-contact div {
-    margin-top: 36px;
-    position: relative
-}
-
-.contact .contact-zone .project-contact div label {
-    cursor: pointer;
-    background: var(--couleur-fond);
-    padding: 3px 6px;
-    position: absolute;
-    top: -10px;
-    left: 15px;
-    font-size: small;
-    transition: background-color .3s
-}
-
-.contact .contact-zone .project-contact div input,
-.contact .contact-zone .project-contact div textarea {
-    background: var(--couleur-fond);
-    border-radius: 30px;
-    border: var(--couleur-nav) solid 1px;
-    outline-color: var(--couleur-nav);
-    padding: 20px;
-    width: 100%;
-    transition: background-color .3s
-}
-
-.contact .contact-zone .project-contact div textarea {
-    height: 15vw;
-    resize: none
-}
-
-.contact .contact-zone .project-contact .submit {
-    border: none;
-    background: 0 0;
-    text-align: left;
-    font-weight: 600;
-    font-family: poppins, "sans-serif";
-    margin-top: 20px;
-    cursor: pointer;
-    transition: .3s
-}
-
-.contact .contact-zone .project-contact .submit:hover {
-    transition: .3s;
-    color: var(--couleur-span)
-}
-
-.contact .contact-zone .project-contact .submit:hover svg path {
-    color: var(--couleur-span)
-}
-
-.contact .contact-zone .project-contact .submit svg {
-    transform: rotate(-45deg);
-    margin-left: 10px
-}
 
 @media screen and (max-width:930px) {
     .contact .contact-zone {
@@ -129,21 +66,6 @@
         text-align: center
     }
 
-    .contact .contact-zone .project-contact {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        margin: 0;
-        padding-inline: 45px
-    }
-
-    .contact .contact-zone .project-contact div {
-        width: 70%
-    }
-
-    .contact .contact-zone .project-contact div textarea {
-        height: 30vw
-    }
 }
 
 @media screen and (max-width:740px) {
@@ -155,28 +77,4 @@
         font-size: 3.5vw
     }
 
-    .contact .contact-zone .project-contact div,
-    .contact .contact-zone li,
-    .contact .contact-zone p {
-        font-size: 3.5vw
-    }
-
-    .contact .contact-zone .project-contact div {
-        width: 100%;
-        margin-top: 25px
-    }
-
-    .contact .contact-zone .project-contact div input,
-    .contact .contact-zone .project-contact div textarea {
-        font-size: 3vw;
-        padding: 15px 20px
-    }
-
-    .contact .contact-zone .project-contact div textarea {
-        height: 40vw
-    }
-
-    .contact .contact-zone .project-contact div label {
-        font-size: 3vw;
-    }
 }

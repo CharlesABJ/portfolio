@@ -5,6 +5,8 @@ export const projectList = [
     yearProject: 2023,
     imageSrc: "../../assets/images/kasa.webp",
     pictures: "../../assets/images/kasa-pictures.svg",
+    lightHouseSrc: "../../assets/images/kasa-lighthouse.png",
+    lightHouseSrcDark: "../../assets/images/kasa-lighthouse-dark.png",
     missionProjectResume:
       "Développer une application web de location immobilière en utilisant React...",
     missionProject:
@@ -23,6 +25,8 @@ export const projectList = [
     yearProject: 2023,
     imageSrc: "../../assets/images/mon-vieux-grimoire.webp",
     pictures: "../../assets/images/mon-vieux-grimoire-pictures.svg",
+    lightHouseSrc: "../../assets/images/grimoire-lighthouse.png",
+    lightHouseSrcDark: "../../assets/images/grimoire-lighthouse-dark.png",
     missionProjectResume:
       "Développement du back-end d'un site de notation de livres avec NodeJS...",
     missionProject:
@@ -34,6 +38,7 @@ export const projectList = [
     ],
     technoName: ["Green IT", "Express.js", "MongoDB", "RESTful API"],
     gitHubProject: "https://github.com/CharlesABJ/mon-vieux-grimoire",
+
     // linkProject: "https://charlesabj-kasa.netlify.app/",
   },
   {
@@ -42,6 +47,8 @@ export const projectList = [
     yearProject: 2023,
     imageSrc: "../../assets/images/nina-carducci.webp",
     pictures: "../../assets/images/nina-carducci-pictures.svg",
+    lightHouseSrc: "../../assets/images/nina-lighthouse.png",
+    lightHouseSrcDark: "../../assets/images/nina-lighthouse-dark.png",
     missionProjectResume:
       "Débugger et optimiser le site web d'une photographe en Vanilla JS...",
     missionProject:
@@ -63,6 +70,8 @@ export const projectList = [
     yearProject: 2022,
     imageSrc: "../../assets/images/booki.webp",
     pictures: "../../assets/images/booki-pictures.svg",
+    lightHouseSrc: "../../assets/images/booki-lighthouse.png",
+    lightHouseSrcDark: "../../assets/images/booki-lighthouse-dark.png",
     missionProjectResume:
       "Intégration d'une maquette pour une agence de voyage en HTML/CSS natif...",
     missionProject:

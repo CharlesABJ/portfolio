@@ -79,8 +79,12 @@
         margin: 40px;
     }
 
-    .projects .projects-zone .cards-projects-zone .card-projects:not(:first-child) {
+    .projects .projects-zone .cards-projects-zone .card-projects {
         display: none;
+    }
+
+    .projects .projects-zone .cards-projects-zone .card-projects.is-active {
+        display: block;
     }
 
     .projects .projects-zone .cards-projects-zone {

@@ -8,9 +8,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 function CardProjects(props) {
   return (
-    <div
-      className={`card-projects ${props.isCardVisible ? "animate-card" : ""}`}
-    >
+    <div className={`card-projects ${props.projectClassName}`}>
       <div className="cover-image">
         <div className={`overlay ${props.overlayClassName}`}></div>
         <img src={props.imageSrc} alt={props.titleProject} loading="lazy" />

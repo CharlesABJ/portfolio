@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookMessenger,
   faGithub,
-  faWhatsapp,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer(props) {
@@ -42,12 +42,12 @@ function Footer(props) {
         </li>
         <li>
           <a
-            title="Whatsapp"
-            href="https://api.whatsapp.com/qr/UJSL5CKGZELRD1?autoload=1&app_absent=0"
+            title="LinkedIn"
+            href="https://www.linkedin.com/in/charlesabj-78753b182/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faWhatsapp} />
+            <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>
         <li>
@@ -62,7 +62,9 @@ function Footer(props) {
         </li>
       </ul>
       <span>© 2023 • Make with ❤️ By CharlesABJ </span>
-      {/* Thank you https://icones8.fr/icons !! */}
+      {/* <span>
+        <a href="https://icones8.fr/icons">Thank you icones8 for icons !! </a>
+      </span> */}
     </footer>
   );
 }
