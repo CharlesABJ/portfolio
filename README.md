@@ -9,7 +9,8 @@ N'hesitez pas à y faire un tour !
 👉 Voir le site : <a href="https://charlesabj.netlify.app/">Portfolio Demo<a/>
 
 Construit avec :
-» Vanila CSS
+
+» Vanila CSS </br>
 » NextJS
 
 Photo du projet 📸
