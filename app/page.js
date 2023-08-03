@@ -86,7 +86,7 @@ function page() {
     }
   }, [darkMode]);
   useEffect(() => {
-    // Initialisez AOS
+    // Initialisation de AOS
     AOS.init({
       offset: 0, // Décalage (en pixels) depuis le bas de la fenêtre pour déclencher l'animation
       duration: 800, // Durée de l'animation
@@ -113,7 +113,7 @@ function page() {
         iconChangeMode={darkMode ? faSun : faMoon}
       />
       <Home
-        dataAos="fade-up"
+        //dataAos="fade-up"
         sectionRef={homeSectionRef}
         profilSrc={
           darkMode
@@ -121,16 +121,23 @@ function page() {
             : "../../assets/images/logo-light.webp"
         }
       />
-      <About dataAos="fade-up" sectionRef={aboutSectionRef} />
+      <About
+        //dataAos="fade-up"
+        sectionRef={aboutSectionRef}
+      />
       <Projects
-        dataAos="fade-up"
+        //dataAos="fade-up"
         sectionRef={projectsSectionRef}
         overlayClassName={darkMode ? "dark-mode" : null}
         darkMode={darkMode}
       />
-      <Skills dataAos="fade-up" sectionRef={skillsSectionRef} />
+      <Skills ////dataAos="fade-up"
+        sectionRef={skillsSectionRef}
+      />
       <Recommandations />
-      <Contact dataAos="fade-up" sectionRef={contactSectionRef} />
+      <Contact ////dataAos="fade-up"
+        sectionRef={contactSectionRef}
+      />
       <Footer
         aboutSectionRef={aboutSectionRef}
         skillsSectionRef={skillsSectionRef}
