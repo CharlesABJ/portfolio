@@ -41,11 +41,11 @@ function Contact(props) {
               </li>
               <li>
                 <a
-                  href="tel:+41754650320"
+                  href="tel:+41764650320"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  +41 7 54 65 03 20
+                  +41 7 64 65 03 20
                 </a>
               </li>
               <li>
