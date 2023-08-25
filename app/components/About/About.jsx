@@ -41,7 +41,7 @@ function About(props) {
           <h3>Un développeur web Front-End </h3>
           <p>
             Bonjour à vous qui lisez cette description ! <br /> Je m'appelles
-            Charles ABJ, j'ai 22 ans et je suis développeur Front-End Junior.
+            Charles ABJ, j'ai 22 ans et je suis développeur Front-End.
             <br />
             <br />
             Aussi loin que je m'en souvienne, j'ai toujours été attiré par la
