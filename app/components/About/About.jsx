@@ -40,7 +40,7 @@ function About(props) {
         <div className="presentation">
           <h3>Un développeur web Front-End </h3>
           <p>
-            Bonjour à vous qui lisez cette description ! <br /> Je m'appelles
+            Bonjour à vous qui lisez cette description ! <br /> Je m'appelle
             Charles ABJ, j'ai 22 ans et je suis développeur Front-End.
             <br />
             <br />
