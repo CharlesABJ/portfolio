@@ -41,6 +41,7 @@ function Contact(props) {
               </li>
               <li>
                 <a
+                  title="Pour la France 🇫🇷: +33 6 30 08 65 92 👋"
                   href="tel:+41764650320"
                   target="_blank"
                   rel="noopener noreferrer"
