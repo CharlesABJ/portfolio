@@ -46,7 +46,7 @@ function About(props) {
             <br />
             Aussi loin que je m'en souvienne, j'ai toujours été attiré par la
             création. <br /> Que ce soit par l'écriture de scénario, par la
-            conception de jeu de rôle ou encore par la programation. <br />
+            conception de jeu de rôle ou encore par la programmation. <br />
             Vous l'aurez compris j'adore créer. Mais ce qui me fascine
             particulièrement dans la programmation, c'est la capacité de voir
             rapidement les résultats de notre travail et de pouvoir les partager
