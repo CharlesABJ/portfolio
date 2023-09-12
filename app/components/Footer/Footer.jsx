@@ -14,7 +14,7 @@ function Footer(props) {
   return (
     <footer>
       <h3>Charles ABJ</h3>
-      <p>Développeur Fronted</p>
+      <p>Développeur Front-End</p>
       <ul className="nav">
         <li
           className="active"
