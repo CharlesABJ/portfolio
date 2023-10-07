@@ -51,7 +51,7 @@ function Contact(props) {
               </li>
               <li>
                 <a
-                  href="https://wa.me/qr/UJSL5CKGZELRD1"
+                  href="http://wa.me/41763694154"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
