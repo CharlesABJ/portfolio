@@ -42,11 +42,11 @@ function Contact(props) {
               <li>
                 <a
                   title="Pour la France 🇫🇷: +33 6 30 08 65 92 👋"
-                  href="tel:+41764650320"
+                  href="tel:+41763694154"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  +41 7 64 65 03 20
+                  +41 76 369 41 54
                 </a>
               </li>
               <li>
