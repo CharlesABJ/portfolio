@@ -148,7 +148,8 @@ p {
 .signature {
     height: 26px;
     overflow: hidden;
-    margin: 0;
+    width: fit-content;
+    margin: 0 auto;
     position: relative;
 }
 
