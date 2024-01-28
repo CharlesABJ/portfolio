@@ -1,0 +1,114 @@
+.project-contact {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 30%
+}
+
+.project-contact div {
+    margin-top: 36px;
+    position: relative
+}
+
+.project-contact div label {
+    cursor: pointer;
+    background: var(--couleur-fond);
+    padding: 3px 6px;
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    font-size: small;
+    transition: background-color .3s
+}
+
+.project-contact div input,
+.project-contact div textarea {
+    background: var(--couleur-fond);
+    border-radius: 30px;
+    border: var(--couleur-nav) solid 1px;
+    outline-color: var(--couleur-nav);
+    padding: 20px;
+    width: 100%;
+    transition: background-color .3s
+}
+
+.project-contact div textarea {
+    height: 15vw;
+    resize: none
+}
+
+.project-contact .submit {
+    border: none;
+    background: 0 0;
+    text-align: left;
+    font-weight: 600;
+    font-family: poppins, "sans-serif";
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .3s
+}
+
+.project-contact .submit:hover {
+    transition: .3s;
+    color: var(--couleur-span)
+}
+
+.project-contact .submit:hover svg path {
+    color: var(--couleur-span)
+}
+
+.project-contact .submit svg {
+    transform: rotate(-45deg);
+    margin-left: 10px
+}
+
+
+@media screen and (max-width:930px) {
+
+    .project-contact {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding-inline: 45px
+    }
+
+    .project-contact div {
+        width: 70%
+    }
+
+    .project-contact div textarea {
+        height: 30vw
+    }
+}
+
+@media screen and (max-width:740px) {
+    .project-contact {
+        padding-inline: 35px;
+    }
+
+    .project-contact div,
+    li,
+    p {
+        font-size: 3.5vw
+    }
+
+    .project-contact div {
+        width: 100%;
+        margin-top: 25px
+    }
+
+    .project-contact div input,
+    .project-contact div textarea {
+        font-size: 3vw;
+        padding: 15px 20px
+    }
+
+    .project-contact div textarea {
+        height: 40vw
+    }
+
+    .project-contact div label {
+        font-size: 3vw;
+    }
+}

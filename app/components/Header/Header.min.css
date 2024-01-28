@@ -1,0 +1,248 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: calc(100% - 80px);
+    width: 100%;
+    background: var(--couleur-fond-header);
+    box-shadow: 0 2px 4px var(--couleur-box-shadow);
+    height: 80px;
+    z-index: 4;
+    padding-inline: 65px;
+}
+
+header .logo {
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 1.3s;
+    height: 60%;
+}
+
+header .logo img {
+    height: 100%;
+}
+
+header .logo:active {
+    transform: rotate(-360deg);
+    transition: padding-block 0.3s;
+}
+
+
+header nav {
+    margin-block: 35px;
+    display: flex;
+    list-style: none;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-left: 3vw;
+    cursor: pointer;
+    color: var(--couleur-nav);
+    transition: 0.3s all;
+}
+
+header nav ul li.hidden {
+    display: none;
+    cursor: pointer;
+}
+
+header nav ul li.off {
+    cursor: pointer;
+}
+
+header nav ul li span {
+    color: var(--couleur-nav-active);
+    transition: 0.3s all;
+}
+
+header nav ul li span:hover {
+    color: var(--couleur-span);
+    transition: 0.3s all;
+}
+
+
+
+header nav ul li .nav-on {
+    display: none;
+}
+
+
+header nav ul .nav-responvsive {
+    display: flex;
+    align-items: center;
+}
+
+
+header nav ul li svg {
+    padding: 5px 7px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+header nav ul li svg:hover {
+    background: var(--couleur-fond2);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+header nav ul li svg path {
+    transition: 0.3s;
+}
+
+header nav ul li svg:hover path {
+    color: var(--couleur-span);
+    transition: 0.3s;
+}
+
+header nav ul li span.active svg:hover {
+    background: var(--couleur-fond2);
+    transform: scale(1.05);
+}
+
+
+header nav ul li.off svg:active {
+    animation: rotate 0.7s forwards;
+}
+
+
+@keyframes rotate {
+
+    0% {
+        transform: scale(1.65) rotate(0);
+    }
+
+    100% {
+        transform: scale(0.8) rotate(360deg);
+    }
+}
+
+/* Bouton de retour en haut */
+header .up {
+    cursor: pointer;
+    position: fixed;
+    right: 65px;
+    bottom: 7%;
+    background: var(--couleur-up-button);
+    box-shadow: 0 2px 4px var(--couleur-box-shadow);
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: 0.3s background-color;
+}
+
+header .up:hover svg path {
+    color: var(--couleur-nav-hover);
+    transition: 0.2s all;
+}
+
+header .up svg path {
+    color: var(--couleur-nav);
+    transition: 0.2s all;
+}
+
+
+@media screen and (max-width: 930px) {
+    header {
+        left: 50%;
+        transform: translate(-50%, -7%);
+        bottom: 7%;
+        width: 90%;
+        height: 12vw;
+        padding-inline: 35px;
+        border-radius: 30px;
+        box-shadow: 0 2px 10px var(--couleur-box-shadow);
+    }
+
+    header nav,
+    header nav ul {
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        cursor: default;
+    }
+
+    header nav ul .nav-responvsive {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header nav ul li .nav-off {
+        display: none;
+
+    }
+
+    header nav ul li .nav-on {
+        text-align: center;
+        display: none;
+    }
+
+    header nav ul li .nav-on {
+        position: relative;
+    }
+
+    header nav ul li .nav-on svg {
+        padding: 5px;
+        font-size: 5vw;
+        transition: 0.3s all;
+        cursor: pointer;
+    }
+
+    header nav ul li .nav-on::after {
+        content: '';
+        height: 80%;
+        width: 1px;
+        background-color: var(--couleur-hover);
+        position: absolute;
+        top: 50%;
+        right: -100%;
+        transform: translate(100%, -50%);
+    }
+
+    header nav ul li:nth-child(5),
+    header nav ul li.hidden {
+        display: block;
+    }
+
+    header .up {
+        display: none;
+    }
+}
+
+@media screen and (max-width:740px) {
+    header {
+        height: 14vw;
+        padding-inline: 25px;
+        left: 50%;
+        transform: translate(-50%, -5%);
+        bottom: 5%;
+    }
+
+
+    header nav ul li .nav-on::after {
+        display: none;
+    }
+
+    header nav ul li.hidden {
+        font-size: small;
+    }
+
+}
+
+@media screen and (max-width:410px) {
+
+    header nav ul li .nav-on svg {
+        font-size: 7vw;
+    }
+
+
+}

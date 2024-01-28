@@ -1,0 +1,80 @@
+.contact .contact-zone {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 100px 0
+}
+
+.contact .contact-zone h3 {
+    text-align: center
+}
+
+.contact .contact-zone h3 svg {
+    margin-right: 10px
+}
+
+.contact .contact-zone .classic-contact {
+    margin-right: 30px;
+    width: 30%;
+    padding: 0 5%;
+    list-style: none
+}
+
+.contact .contact-zone .classic-contact ul {
+    list-style: none;
+    margin-block: 35px;
+    font-size: medium
+}
+
+.contact .contact-zone .classic-contact ul p {
+    margin-bottom: 10px
+}
+
+.contact .contact-zone .classic-contact ul li {
+    margin-bottom: 15px
+}
+
+.contact .contact-zone .classic-contact ul li svg {
+    cursor: pointer;
+    font-size: 90%;
+    padding-left: 10px
+}
+
+.contact .contact-zone .classic-contact ul li a:hover,
+.contact .contact-zone .classic-contact ul li svg path:hover,
+.contact .contact-zone .classic-contact ul li:hover svg path {
+    color: var(--couleur-nav-active)
+}
+
+.contact .contact-zone .classic-contact ul li a {
+    text-decoration: none
+}
+
+.contact .contact-zone .classic-contact ul li .email {
+    text-decoration: underline
+}
+
+
+@media screen and (max-width:930px) {
+    .contact .contact-zone {
+        flex-direction: column
+    }
+
+    .contact .contact-zone .classic-contact {
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center
+    }
+
+}
+
+@media screen and (max-width:740px) {
+    .contact .contact-zone {
+        margin: 0
+    }
+
+    .contact .contact-zone h3 {
+        font-size: 3.5vw
+    }
+
+}

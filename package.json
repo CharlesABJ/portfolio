@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.0",
+    "dotenv": "^16.3.1",
+    "framer-motion": "^10.15.0",
+    "next": "^13.4.12",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "18.2.0",
+    "scrollreveal": "^4.0.9"
+  }
+}

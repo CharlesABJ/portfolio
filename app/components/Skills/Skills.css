@@ -1,0 +1,76 @@
+.skills .languages-logi {
+    display: flex;
+    margin-top: 100px;
+}
+
+.skills .languages-logi h3,
+.skills .languages-logi h3 svg path {
+    color: var(--couleur-h3);
+}
+
+.skills .languages-logi h3 svg {
+    margin-right: 10px;
+}
+
+.skills .languages-logi .languages {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills .languages-logi .languages .languages-icons,
+.skills .languages-logi .logi .logi-icons {
+    margin-top: 60px;
+    width: max-content;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.skills .languages-logi .logi {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width:930px) {
+    .skills .languages-logi {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .skills .languages-logi .languages,
+    .skills .languages-logi .logi {
+        width: 100%;
+
+    }
+
+    .skills .languages-logi .languages .languages-icons,
+    .skills .languages-logi .logi .logi-icons {
+        margin-top: 20px;
+
+    }
+
+    .skills .languages-logi .logi {
+        margin-top: 100px;
+    }
+}
+
+
+
+@media screen and (max-width:740px) {
+
+    .skills .languages-logi .languages .languages-icons,
+    .skills .languages-logi .logi .logi-icons {
+        grid-gap: 30px;
+    }
+
+    .skills .languages-logi h3 {
+        font-size: 3.5vw;
+    }
+}
